@@ -1,0 +1,88 @@
+.ATTCK-case {
+  .att-ck {
+    overflow: hidden;
+    height: calc(100vh - 88px);
+  }
+
+  .zxl .ATTCK-row {
+    margin-right: -12px;
+
+    .attck-div {
+      margin-right: 12px;
+      padding: 0 4px;
+
+      .tz-card {
+        margin-bottom: 8px;
+      }
+
+      &.overflow-item:hover {
+        padding-right: 0;
+      }
+    }
+
+    .title-num {
+    }
+  }
+
+  .zxxl .ATTCK-row {
+    margin-right: -24px;
+
+    .attck-div {
+      margin-right: 24px;
+      padding: 0 8px;
+
+      .tz-card {
+        margin-bottom: 12px;
+      }
+
+      &.overflow-item:hover {
+        padding-right: 4px;
+      }
+    }
+
+    .title-num {
+      margin-top: 2px;
+    }
+  }
+
+  .ATTCK-row {
+    flex-wrap: nowrap;
+    width: 100%;
+
+    .tz-col {
+      min-width: 114px;
+    }
+
+    .attck-div {
+      background: rgb(244 246 250 / 50%);
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+
+      &:hover {
+        overflow-y: overlay;
+      }
+
+      .attck-div-title {
+        padding-top: 12px;
+        position: sticky;
+        z-index: 9;
+        top: 0;
+        width: 100%;
+        background: rgb(249 250 252);
+      }
+    }
+  }
+
+  .attck-rule-item_High:hover {
+    box-shadow: 0 2px 4px 0 rgb(233 84 84 / 25%);
+  }
+
+  .attck-rule-item_Medium:hover {
+    box-shadow: 0 2px 4px 0 rgb(255 138 52 / 25%);
+  }
+
+  .attck-rule-item_Low:hover {
+    box-shadow: 0 2px 4px 0 rgb(255 196 35 / 25%);
+  }
+}

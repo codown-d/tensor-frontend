@@ -1,0 +1,14 @@
+ul.navbar-online-vulerabilities {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+
+  li {
+    margin: 0 15px;
+    cursor: pointer;
+
+    &.active {
+      border-bottom: 2px solid #3cb2ed;
+    }
+  }
+}

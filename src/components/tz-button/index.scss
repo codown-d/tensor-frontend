@@ -1,0 +1,144 @@
+.ant-btn {
+    min-width: 80px;
+
+    &>i.icon {
+        padding-right: 8px;
+    }
+
+    &.ant-btn-lg:not(.ant-btn-text) {
+        min-width: 100px;
+    }
+
+    &.ant-btn-sm {
+        padding-left: 12px; //20230419 TEN-1224
+        padding-right: 12px; //20230419 TEN-1224
+
+        &:not(.ant-btn-text) {
+            min-width: 56px; //20230418 TEN-1224
+        }
+    }
+}
+
+.ant-btn-default {
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: #2177d1;
+        color: #2177d1;
+        background-color: rgb(33 119 209 / 5%);
+    }
+}
+
+.ant-btn-primary {
+    &:focus {
+        color: #fff;
+        border-color: #2177d1;
+        background-color: #2177d1;
+    }
+
+    &:hover {
+        color: #fff;
+        border-color: #2d94ff;
+        background-color: rgb(45 148 255);
+    }
+
+    &.ant-btn-dangerous {
+        color: #fff;
+        border-color: rgb(233 84 84 / 100%);
+        background-color: rgb(233 84 84 / 100%);
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            border-color: rgb(255 97 97 / 100%);
+            background-color: rgb(255 97 97 / 100%);
+        }
+    }
+}
+
+.ant-btn-dangerous {
+    color: rgb(233 84 84 / 100%);
+    border-color: #e7e9ed;
+
+    &:hover,
+    &:focus {
+        color: rgb(233 84 84 / 100%);
+        border-color: rgb(233 84 84 / 100%);
+        background-color: rgb(233 84 84 / 5%);
+    }
+}
+
+.ant-btn-text {
+    color: #2177d1;
+    margin-left: -8px;
+    padding: 1px 8px;
+    min-width: 44px;
+    border: 0;
+    text-align: center;
+    border-radius: 4px;
+    height: 24px;
+    line-height: 22px;
+
+    &:hover {
+        color: #2177d1;
+        border-color: transparent;
+        background: rgb(33 119 209 / 5%);
+    }
+
+    &:focus,
+    &:active {
+        color: #2177d1;
+        border-color: transparent;
+        background: rgb(33 119 209 / 5%);
+    }
+
+    &.ant-btn-dangerous {
+        color: rgb(233 84 84 / 100%);
+
+        &:hover,
+        &:focus {
+            color: #e95454;
+            background-color: rgb(233 84 84 / 5%);
+        }
+    }
+}
+
+.ant-btn-link {
+    padding: 2px 0;
+    margin-left: 0;
+    min-width: auto;
+
+    i.icon {
+        padding-right: 0;
+    }
+}
+
+.btn-disabled {
+    color: #b3bac6;
+    cursor: no-drop;
+
+    &:hover,
+    &:focus {
+        color: #b3bac6;
+        background: transparent;
+    }
+}
+
+//取消按钮样式
+button.cancel-btn {
+    color: #6c7480;
+    border: 1px solid #dfe1e6;
+
+    &:hover {
+        color: #2177d1;
+        border: 1px solid #e7e9ed;
+        background: rgb(33 119 209 / 5%);
+    }
+
+    &:focus {
+        color: #2177d1;
+        border: 1px solid #e7e9ed;
+        background: rgb(33 119 209 / 10%);
+    }
+}

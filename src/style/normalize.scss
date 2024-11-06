@@ -1,0 +1,232 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
+    border: 0;
+    font-family: 'pingfang SC', 'helvetica neue', arial, 'hiragino sans gb', 'microsoft yahei ui', 'microsoft yahei',
+        simsun, sans-serif;
+}
+
+body,
+li {
+    color: #6c7480;
+}
+
+body {
+    font-size: 14px;
+}
+
+th,
+td {
+    color: #3e4653;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: couriernew, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2177d1;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2177d1;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+div,
+p {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+}
+
+//全局滚动条样式
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #dfe1e6;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
+// 滚动条优化
+// ::-webkit-scrollbar-track-piece {
+//   background-color: #b8b8b836;
+//   -webkit-border-radius: 0px;
+// }
+// ::-webkit-scrollbar {
+//   width: 4px;
+//   height: 6px;
+// }
+// ::-webkit-scrollbar-track {
+//   background-color: transparent;
+// }
+// ::-webkit-scrollbar-thumb {
+//   height: 50px;
+//   -webkit-border-radius: 6px;
+//   outline-offset: -6px;
+//   opacity: 0.5;
+//   filter: alpha(opacity = 50);
+//   background-color: #b8b8b8db;
+// }
+
+.noScrollbar {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
+    &:hover {
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-track-piece {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            display: block;
+        }
+    }
+}
+
+.noScrollHover {
+    &::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 1000px transparent inset;
+}
+
+input,
+textarea,
+span.ant-select-selection-placeholder {
+    &::placeholder {
+        color: #b3bac6 !important;
+    }
+}
+
+span.ant-select-selection-placeholder {
+    color: #b3bac6 !important;
+}
+
+.ant-checkbox-inner {
+    border-radius: 4px;
+}

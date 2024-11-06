@@ -1,0 +1,104 @@
+.screen-risk-explorer-online-vulnerabilities,
+.screen-risk-explorer,
+.screen-microseg-visualize,
+.screen-microseg-visualize-box {
+  .layout-content {
+    background: rgba($color: #000, $alpha: 10%);
+
+    #chartContainer {
+      height: calc(100% - 120px);
+      width: 100%;
+      background: #fff;
+      box-sizing: border-box;
+    }
+
+    .chart-search-group {
+      position: fixed;
+      width: 35%;
+      top: 20px;
+      right: 32px;
+      z-index: 1000;
+    }
+  }
+
+  .chart-legend {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 1;
+    width: 120px;
+    padding: 15px 10px;
+    color: white;
+    font-size: 14px;
+    background: #23304f;
+    border-radius: 5px;
+
+    div {
+      margin: 10px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .severity {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    .item-safe {
+      background: #4dbb9e;
+    }
+
+    .item-negligible {
+      background: #6a7895;
+    }
+
+    .item-low {
+      background: #daa753;
+    }
+
+    .item-medium {
+      background: #dc7a2d;
+    }
+
+    .item-high {
+      background: #c6544c;
+    }
+
+    .item-critical {
+      background: #8d3530;
+    }
+  }
+
+  .screen-runtime-detection-online-vulnerabilities {
+    background: #1b2642;
+
+    .profile-username {
+      color: white;
+    }
+  }
+}
+
+.screen-risk-explorer-online-vulnerabilities,
+.screen-risk-explorer-online-vulnerabilities-list {
+  .dock-panel-actions {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 99;
+
+    img {
+      width: 30px;
+      margin: 10px 5px;
+      cursor: pointer;
+    }
+  }
+}

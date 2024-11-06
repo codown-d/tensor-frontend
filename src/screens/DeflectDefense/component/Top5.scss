@@ -1,0 +1,38 @@
+.top5-list-group {
+  flex: 1;
+
+  .top5-item {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 12px;
+
+    .top5-item-name {
+      font-size: 12px;
+      line-height: 20px;
+      color: #6c7480;
+    }
+
+    .txt-count {
+      font-size: 12px;
+      line-height: 20px;
+      color: #3e4653;
+    }
+  }
+}
+
+.scale-case {
+  width: 100%;
+  margin-top: -4px;
+  padding-top: 4px;
+  border-top: 1px solid #e7e9ed;
+  justify-content: space-between;
+
+  div,
+  span {
+    height: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #6c7480;
+  }
+}

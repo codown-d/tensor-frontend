@@ -1,0 +1,121 @@
+.discover_chart {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  height: 250px;
+
+  .discover_chart_title {
+    // line-height: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: PingFangSC-Semibold, 'PingFang SC';
+    color: #1e222a;
+  }
+
+  .discover_chart_box {
+    width: 40%;
+    flex: none;
+  }
+
+  .discover_top5 {
+    width: 60%;
+    flex: none;
+
+    .discover_chart_title {
+      padding-left: 56px;
+      padding-bottom: 2px;
+    }
+
+    .top5_list_box {
+      border-left: 1px solid #f3f5f8;
+      height: 200px;
+      padding-left: 56px;
+      padding-top: 18px;
+    }
+  }
+}
+
+.top5_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #333e54;
+  font-weight: 400;
+
+  .top5_item_name {
+    font-size: 12px;
+    color: #6c7480;
+  }
+
+  .top5_item_chart_bar {
+    margin: 2px 0 12px;
+    display: flex;
+    flex: 1;
+  }
+}
+
+.top5_barchart_item {
+  .top5_barchart_section {
+    position: relative;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    justify-content: flex-start;
+
+    .top_section_item {
+      height: 7px;
+    }
+  }
+}
+
+.discover_chart-pie {
+  padding-right: 48px;
+  height: 200px;
+  border-right: 1px solid #f3f5f8;
+
+  .customize-chart {
+    position: relative;
+
+    .g2-customize-legend {
+      .legend-item {
+        width: 100%;
+        display: flex;
+        line-height: 24px;
+        flex-direction: row;
+        color: #6c7480;
+        align-items: center;
+        justify-content: flex-start;
+
+        .legend-item-marker {
+          width: 8px;
+          height: 8px;
+          display: inline-block;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+
+        .legend-item-name {
+          width: 64px;
+          color: #6c7480;
+        }
+      }
+    }
+  }
+}
+
+.vulnerabilities {
+  .vuln-chart {
+    position: relative;
+    margin-right: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 68%;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      border-right: 1px solid #f4f6fa;
+    }
+  }
+}

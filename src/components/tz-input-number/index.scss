@@ -1,0 +1,39 @@
+.tz-input-number {
+    .ant-input-number-group-addon {
+        background: transparent;
+    }
+
+    .ant-input-number-group {
+        box-shadow: none !important;
+
+        .ant-input-number-focused {
+
+            box-shadow: none !important;
+        }
+
+        .ant-input-number {
+            border-right-width: 0px !important;
+        }
+
+        &:hover {
+
+            .ant-input-number,
+            .ant-input-number-group-addon {
+                border-color: #2177d1;
+            }
+
+            .ant-input-number {
+                border-right-width: 0px !important;
+            }
+
+            .ant-input-number-group-addon {
+                border-left-width: 0px !important;
+            }
+        }
+    }
+
+    .ant-input-number-focused+.ant-input-number-group-addon {
+        border-left-width: 0px !important;
+        border-color: #2177d1;
+    }
+}

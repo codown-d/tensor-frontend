@@ -1,0 +1,28 @@
+.attack-log-info {
+  .action {
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    width: 100px;
+  }
+}
+
+.html-code,
+.http-code {
+  position: relative;
+  background: #f4f6fa;
+  padding: 12px 24px;
+
+  code {
+    background: transparent;
+    padding: 0 !important;
+  }
+
+  .more-message {
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}

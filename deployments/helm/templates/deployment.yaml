@@ -1,0 +1,32 @@
+apiVersion: {{ include "common.capabilities.deployment.apiVersion" . }}
+kind: Deployment
+metadata:
+  name: {{ include "common.names.fullname" . }}
+  labels: {{- include "common.labels.standard" . | nindent 4 }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {{- include "common.labels.matchLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels: {{- include "common.labels.matchLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: REACT_APP_API_URL
+        image: {{ template "fronted.image" . }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        name: frontend
+        resources:
+{{ toYaml .Values.resources | trim | indent 10 }}
+{{- if eq .Values.expose.type "NodePort" }}
+        volumeMounts:
+        - name: config
+          mountPath: /etc/nginx/conf.d/
+      volumes:
+      - name: config
+        configMap:
+          name: nginx-conf
+{{- end }}
+      imagePullSecrets:
+      - name: {{ .Values.image.pullSecret }}

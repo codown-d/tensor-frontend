@@ -1,0 +1,21 @@
+global:
+  prefixName: csec
+  defaultNameOverride:
+    console: "console"
+    scanner: "scanner"
+    dockerregistry: "scanner-dockerregistry"
+
+
+image:
+  registry: harbor.local.example.com
+  repository: library
+  tag: 1.6.8
+expose:
+  #可选择"ingress"、"NodePort"
+  type: ingress 
+  #以下参数仅对Ingres生效
+  hosts: console.example.com
+  tls:
+    enable: true 
+    crt: "certfile/tls.crt"
+    key: "certfile/tls.key"

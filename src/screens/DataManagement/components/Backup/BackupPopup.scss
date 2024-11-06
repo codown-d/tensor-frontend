@@ -1,0 +1,55 @@
+.backup-popup {
+  .backup-popup-row-tit {
+    border-right: 1px solid #f4f6fa;
+
+    .tz-col {
+      padding: 7px 16px;
+      color: #3e4653;
+      background-color: #f4f6fa;
+
+      //   border-top: none;
+      //   border-bottom: none;
+      &:last-child {
+        border-left: 1px solid #fff;
+      }
+    }
+  }
+
+  .backup-popup-box {
+    border: 1px solid #f4f6fa;
+    border-bottom: none;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .tz-row {
+    border-bottom: 1px solid #f4f6fa;
+  }
+
+  .tz-col {
+    line-height: 22px;
+    color: #3e4653;
+    border-bottom: none;
+  }
+
+  .backup-popup-sec-row {
+    border-left: 1px solid #f4f6fa;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .backup-popup-label {
+    padding: 13px 16px;
+  }
+
+  .backup-popup-value {
+    padding: 13px 16px;
+    border-bottom: 1px solid #f4f6fa;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

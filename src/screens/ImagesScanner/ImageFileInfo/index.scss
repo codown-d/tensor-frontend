@@ -1,0 +1,24 @@
+.err-line-webshell {
+  width: 4px;
+  display: table-cell;
+  background: rgb(179 186 198 / 30%);
+  vertical-align: top;
+  padding: 20px 0;
+  max-height: 640px;
+  overflow: hidden;
+
+  .code-line {
+    height: 2px;
+
+    &.err {
+      cursor: pointer;
+      height: 2px;
+      background: #e95454;
+    }
+  }
+}
+
+.error-webshell {
+  position: absolute;
+  background: rgb(233 84 84 / 100%);
+}

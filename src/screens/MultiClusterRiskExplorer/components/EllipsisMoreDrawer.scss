@@ -1,0 +1,23 @@
+.EllipsisMoreDrawer-Wrap {
+  width: 100%;
+  position: relative;
+
+  .contxt-a9 {
+    max-width: 100%;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 26px;
+
+    &.hide {
+      visibility: hidden;
+      position: absolute;
+
+      //overflow: visible;
+      text-overflow: initial;
+      max-width: calc(100% + 20px);
+      z-index: -1;
+    }
+  }
+}

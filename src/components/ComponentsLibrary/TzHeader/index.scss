@@ -1,0 +1,24 @@
+.tz-header.header-line {
+    padding-left: 12px;
+    position: relative;
+    font-size: 16px;
+    color: #1E222A;
+    line-height: 24px;
+    font-weight: 550;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+
+    &::after {
+        content: '';
+        width: 4px;
+        height: 16px;
+        background: #2177D1;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -8px;
+        border-radius: 2px 2px 2px 2px;
+
+    }
+}

@@ -1,0 +1,49 @@
+.events-center {
+  border-radius: 8px;
+  height: 100%;
+  background-color: #fff;
+
+  .ant-tabs-nav {
+    margin-bottom: 0;
+    background: #fff;
+  }
+
+  .event-case,
+  .association-case,
+  .flowcenter-case {
+    padding: 0 32px;
+
+    .palace-filter {
+      padding: 24px 0 22px;
+      overflow: hidden;
+    }
+  }
+
+  .tz-filter {
+    margin-top: 24px;
+  }
+
+  .palace-event-toolbar {
+    margin-top: 24px;
+
+    .tz-filter {
+      margin-top: 0;
+    }
+  }
+
+  .palace-toolbar {
+    margin-top: 20px;
+
+    .tz-filter {
+      margin-top: 0;
+    }
+  }
+
+  .palace-toolbar {
+    margin-top: 20px;
+
+    .tz-filter {
+      margin-top: 0;
+    }
+  }
+}

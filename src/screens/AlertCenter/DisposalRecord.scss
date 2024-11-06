@@ -1,0 +1,42 @@
+.disposal-record {
+  .condition-case {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 8px;
+
+    .filter-key {
+      align-items: flex-end;
+    }
+
+    .filter-wraper {
+      flex: 1;
+    }
+
+    .filter-div {
+      width: 27%;
+      float: left;
+      padding: 0;
+      margin-right: 6%;
+
+      &:nth-child(-n + 3) {
+        margin-bottom: 24px;
+      }
+    }
+
+    .filter-key-btns {
+      width: 190px;
+      text-align: center;
+    }
+  }
+
+  .table-history {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}
+
+.cont-item {
+  overflow: hidden;
+}

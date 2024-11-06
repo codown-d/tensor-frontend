@@ -1,0 +1,14 @@
+backup/
+plugins/
+build/
+scripts/
+deployments/
+docker/
+node_modules/
+src/assets/*
+public/
+.gitlab
+.husky
+pnpm-lock.yaml
+react-app-env.d.ts
+react-app-env.d.ts

@@ -1,0 +1,72 @@
+.audit-log-case {
+    .log-list-case-filter {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .log-list-case {
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        .animationCase {
+            transition: height 300ms;
+
+            &.openCase {
+                height: 137px;
+            }
+
+            &.closeCase {
+                height: 82px;
+
+                .tz-selection.close {
+                    display: none;
+                }
+            }
+        }
+
+        .btns-case {
+            flex-basis: calc(25% - 24px);
+
+            &.close {
+                flex-basis: calc(50% - 24px);
+            }
+
+            justify-content: flex-end;
+
+            .tz-button {
+                min-width: auto;
+                flex-basis: 80px;
+                flex-shrink: 1;
+                margin-right: 16px;
+            }
+
+            .putBtn {
+                white-space: nowrap;
+                color: #8e97a3;
+                cursor: pointer;
+            }
+        }
+
+        .title-txt {
+            margin: 20px 24px 18px;
+            display: block;
+            position: relative;
+            color: #1e222a;
+            font-weight: 550;
+            font-size: 16px;
+
+            &::before {
+                position: absolute;
+                top: 20%;
+                left: -10px;
+                width: 4px;
+                height: 60%;
+                background: #2177d1;
+                border-radius: 2px;
+                content: '';
+            }
+        }
+    }
+}

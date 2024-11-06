@@ -1,0 +1,35 @@
+@import '../../style/default.less';
+div.compliance-strategy-action {
+  .act {
+    background: #fff;
+    color: @blue-6;
+  }
+}
+.compliancw-container{
+  .ant-card-head-title{
+    padding-top: 0;
+  }
+  .complianceNodeChart{
+    position: relative;
+    &::before{
+      position: absolute;
+      height: 100%;
+      left: -24px;
+      content: '';
+      border-left: 1px solid #F4F6FA;;
+    }
+  }
+}
+.compliance-custom-scan{
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    max-height: 102px;
+    overflow-y: auto;
+  }
+}
+.compliancw-container-filter{
+  margin: 16px 0 12px;
+  .compliancw-container-toolbar{
+    display: flex;
+    justify-content: space-between;
+  }
+}

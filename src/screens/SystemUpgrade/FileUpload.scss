@@ -1,0 +1,40 @@
+.file-upload {
+    .ant-upload-list-item-progress {
+        bottom: 0;
+        padding-left: 58px;
+        line-height: inherit;
+    }
+
+    .ant-upload-list-item-name {
+        padding-left: 14px;
+    }
+
+    .ant-upload-span {
+        align-items: flex-start;
+    }
+
+    .ant-progress-outer {
+        margin-top: 7px;
+    }
+
+    .ant-upload-list-item {
+        height: auto;
+    }
+
+    .ant-upload-list-item-error {
+        color: #3e4653;
+
+        .ant-upload-list-item-name,
+        .ant-upload-list-item-card-actions .anticon {
+            color: #3e4653;
+        }
+
+        .ant-upload-list-item-progress {
+            span.status {
+                color: #e95454;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,51 @@
+.palace-event-temp {
+    &.art-template {
+        .flex-item {
+            padding-top: 0;
+        }
+    }
+
+    div.art-template-title {
+        width: 126px;
+    }
+}
+
+.detail-palace-case {
+    .ant-drawer-title {
+        .ant-tag.tz-tag {
+            margin-left: 12px;
+        }
+    }
+}
+
+.palace-event-filter {
+    padding-bottom: 12px;
+
+    .palace-event-toolbar {
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+    }
+
+    .palace-event-toolbar-btn {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .tz-form-item {
+        margin-bottom: 0;
+    }
+}
+
+.check-br8 {
+    .ant-checkbox-wrapper.tz-checkbox .ant-checkbox-inner {
+        border-radius: 4px;
+    }
+}
+
+.active-defense-card .palace-event-filter {
+    padding: 0 0 12px;
+}

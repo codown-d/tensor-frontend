@@ -1,0 +1,17 @@
+.kubeMonitor-case {
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 24px !important;
+  padding: 0 !important;
+
+  .content-card-content {
+    height: 100%;
+
+    .table-drop_down {
+      // max-height: calc(100vh - 215px);
+      overflow-y: auto;
+      overflow-y: overlay;
+    }
+  }
+}

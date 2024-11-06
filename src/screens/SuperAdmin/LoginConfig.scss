@@ -1,0 +1,59 @@
+.login-config {
+    .config-item {
+        color: #3e4653;
+        border-top: 1px dashed #f4f6fa;
+        padding-top: 15px;
+        margin-bottom: 12px;
+
+        .tips {
+            font-size: 12px;
+            font-weight: 400;
+            color: #8e97a3;
+        }
+    }
+
+    .config-SSO {
+        border-bottom: 1px dashed #f4f6fa;
+    }
+
+    .config-title {
+        font-size: 14px;
+        font-weight: 550;
+        color: #3e4653;
+        line-height: 22px;
+    }
+}
+
+.upload-container-accounts {
+    .ant-upload-list {
+        flex: 1;
+    }
+
+    .ant-upload-list-item-info {
+        padding-left: 8px;
+    }
+
+    .ant-upload-list-item {
+        height: auto;
+
+        &:hover .ant-upload-list-item-info {
+            background: rgb(33 119 209 / 5%);
+        }
+    }
+
+    .ant-upload-list-item-name {
+        color: #3e4653;
+    }
+}
+
+.upload-case {
+
+    .ant-btn,
+    .ant-btn-default {
+        &:focus {
+            border-color: #e7e9ed;
+            color: #2177d1;
+            background-color: #fff;
+        }
+    }
+}

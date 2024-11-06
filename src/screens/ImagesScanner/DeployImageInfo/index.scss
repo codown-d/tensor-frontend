@@ -1,0 +1,14 @@
+.layer {
+  .layer-table {
+    border: 0;
+
+    .ant-card-head,
+    .ant-card-body {
+      display: contents;
+
+      .ant-card-head-title {
+        padding: 0;
+      }
+    }
+  }
+}

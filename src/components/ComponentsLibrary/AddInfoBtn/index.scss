@@ -1,0 +1,18 @@
+.add-info-btn {
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px dashed #e7e9ed;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2177d1;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #2177d1;
+  }
+}

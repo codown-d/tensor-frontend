@@ -1,0 +1,35 @@
+.content-card-actions {
+  float: right;
+}
+
+.content-card {
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 8px;
+
+  &.table-wrapper {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .content-title {
+    height: 18px;
+    font-size: 16px;
+    font-family: 'PingFangSC-Semibold, PingFang SC';
+    font-weight: 600;
+    color: #1e222a;
+    line-height: 18px;
+  }
+
+  .content-card-description {
+    margin-top: 16px;
+    margin-bottom: 57px;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'PingFangSC-Regular, PingFang SC';
+    font-weight: 400;
+    color: #676e79;
+    line-height: 20px;
+  }
+}

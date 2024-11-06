@@ -1,0 +1,142 @@
+.popup-posi-case {
+  position: fixed;
+
+  // top: 20px;
+  right: 32px;
+  z-index: 999;
+  padding-top: 38px;
+  border-radius: 8px;
+  max-height: calc(100vh - 40px);
+}
+
+.search-popup-group {
+  width: 360px;
+
+  // position: fixed;
+  // top: 58px;
+  // right: 32px;
+  z-index: 999;
+
+  // z-index: 1000;
+  background: #fff;
+  margin-top: 4px;
+  box-shadow: 0 1px 12px rgb(144 168 205 / 25%);
+  border-radius: 8px;
+
+  // max-height: calc(100vh - 82px);
+  overflow-y: overlay;
+
+  &.quickCase {
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #3e4653;
+  }
+
+  &.listCase {
+    padding-top: 8px;
+  }
+
+  .resource-case {
+    background: #fff;
+    border-bottom: 1px solid #f4f6fa;
+    overflow: hidden;
+    min-width: 240px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      box-shadow: 0 1px 12px rgb(144 168 205 / 25%);
+      z-index: 100;
+    }
+
+    .res-group {
+      .head-txt {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3e4653;
+        margin-right: 8px;
+        word-break: break-all;
+        box-sizing: border-box;
+
+        .y-color {
+          background-color: rgb(255 249 197 / 100%);
+        }
+      }
+
+      .ns-txt {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #6c7480;
+
+        .y-color {
+          background-color: rgb(255 249 197 / 100%);
+        }
+      }
+    }
+
+    .tag-num-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &.append-dom {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          width: 1px;
+          height: 20px;
+          background: #f4f6fa;
+        }
+      }
+
+      .num {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #3e4653;
+      }
+
+      .name {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #8e97a3;
+      }
+    }
+  }
+
+  .loading-case {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .ant-spin.ant-spin-spinning {
+      height: 40px;
+    }
+
+    .ant-spin-dot-item {
+      background-color: #2d94ff;
+    }
+
+    .ant-spin-text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: #2d94ff;
+    }
+  }
+}

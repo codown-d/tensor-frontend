@@ -1,0 +1,108 @@
+.tz-donut-chart {
+  position: relative;
+
+  &-legend {
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .legend-item {
+      cursor: pointer;
+      align-items: center;
+      height: 30px;
+
+      .legend-name {
+        width: 100px;
+        flex-shrink: 0;
+        padding-right: 8px;
+      }
+
+      .legend-marker {
+        flex: none;
+      }
+    }
+
+    .legend-marker {
+      background: rgb(23 112 214);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+
+  &-guide {
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    .legend-item {
+      align-items: center;
+      color: #8c8c8c;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .guide-name {
+      margin-bottom: 10px;
+    }
+
+    .guide-value {
+      font-size: 18px;
+      color: #000c17;
+    }
+  }
+}
+
+.tz-donut-chart-tooltip {
+  position: absolute;
+  z-index: 8;
+  box-shadow: 0 0 10px #aeaeae;
+  transition:
+    left 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0s,
+    top 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+  background-color: rgb(255 255 255);
+  border-radius: 3px;
+  color: rgb(89 89 89);
+  font-size: 12px;
+  line-height: 12px;
+  padding: 0 12px;
+  opacity: 0.95;
+  pointer-events: none;
+  left: 411px;
+  top: 97px;
+
+  .tooltip-title {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+
+  .tooltip-list .tooltip-list-item {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+
+    .tooltip-marker {
+      background: rgb(23 112 214);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    .tooltip-name {
+      white-space: nowrap;
+    }
+
+    .tooltip-value {
+      float: right;
+      margin-left: 30px;
+    }
+  }
+}

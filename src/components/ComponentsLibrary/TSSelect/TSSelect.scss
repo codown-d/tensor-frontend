@@ -1,0 +1,24 @@
+.ts-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+
+  .title {
+    color: #151b26;
+    font-weight: 400;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  &-inner {
+    flex: 1;
+    border: 1px solid transparent;
+    transition: all linear 300ms;
+  }
+
+  .ant-select {
+    width: 100%;
+  }
+}

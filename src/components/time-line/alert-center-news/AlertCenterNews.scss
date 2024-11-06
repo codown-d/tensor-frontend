@@ -1,0 +1,38 @@
+.news-case {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  height: 40px;
+  margin-top: -10px;
+  padding: 10px 16px;
+  color: #575f75;
+  font-weight: 400;
+
+  // background-color: rgba(242, 172, 91, 1);
+  font-size: 14px;
+  background: #e4f3fd;
+
+  // border: 1px solid #c1e4fb;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    right: 16px;
+    content: 'X';
+  }
+
+  img {
+    width: 16px;
+    height: auto;
+    margin-right: 8px;
+  }
+
+  .refTxt {
+    display: inline-block;
+    color: #00a0f5;
+  }
+}

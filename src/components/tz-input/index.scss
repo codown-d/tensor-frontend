@@ -1,0 +1,30 @@
+.ant-input {
+  height: 36px;
+  border-radius: 8px;
+
+  &:focus {
+    border-color: #2177d1;
+  }
+}
+
+.ant-input-sm {
+  height: 32px;
+}
+
+.tz-input {
+  .ant-input-clear-icon {
+    display: none;
+  }
+
+  &.ant-input-affix-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &.ant-input-affix-wrapper-focused,
+  &:hover {
+    .ant-input-clear-icon {
+      display: flex;
+    }
+  }
+}

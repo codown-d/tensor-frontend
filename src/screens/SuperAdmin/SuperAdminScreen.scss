@@ -1,0 +1,36 @@
+.super_admin_screen {
+  background: #fff;
+  border-radius: 8px;
+
+  .more-icon {
+    min-width: initial;
+
+    > i.icon {
+      padding-right: 0;
+    }
+
+    .iconfont {
+      display: initial;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      .cabb {
+        color: #2177d1;
+      }
+    }
+  }
+}
+
+.screen-ctrl-center-accounts,
+.screen-super-admin {
+  .content-card {
+    height: 100%;
+    padding: 0;
+
+    // padding-top: 12px;
+    .tab_btns {
+      padding: 0 16px;
+    }
+  }
+}

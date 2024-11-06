@@ -1,0 +1,35 @@
+.nodata-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  .nodata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 200px;
+      height: auto;
+      user-select: none;
+
+      &.small {
+        width: 150px;
+      }
+    }
+  }
+
+  span {
+    display: block;
+    margin-top: -40px;
+    color: #b3bac6;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    user-select: none;
+  }
+}

@@ -1,0 +1,40 @@
+.tz-checkbox {
+  &.ant-checkbox-indeterminate {
+    .ant-checkbox-inner::after {
+      background-color: #2177d1;
+    }
+  }
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  background-color: #2177d1;
+}
+
+.ant-checkbox-wrapper-in-form-item .ant-checkbox-inner {
+  border-radius: 2px;
+}
+
+// @border-radius-base: 8px;
+// @checkbox-border-radius: @border-radius-base; 会设置为默认为8px圆角，用以清除默认
+.tz-checkbox.square {
+  .ant-checkbox {
+    .ant-checkbox-inner {
+      border-radius: 2px;
+    }
+  }
+}
+
+.ant-checkbox-disabled + span {
+  color: #3e4653;
+  cursor: not-allowed;
+}
+
+.ant-checkbox-checked::after {
+  border-color: transparent;
+}
+
+.tz-checkbox-group {
+  .ant-checkbox-group-item {
+    margin-right: 40px;
+  }
+}

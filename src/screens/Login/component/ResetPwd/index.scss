@@ -1,0 +1,41 @@
+.reset-pwd {
+  .ant-form-item-label label {
+    width: 100%;
+  }
+
+  .mb {
+    margin-bottom: 0;
+  }
+
+  .pwd-tip {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+
+  .copy-row {
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .mb4 {
+    margin-bottom: 4px;
+  }
+
+  .mb0 {
+    margin-bottom: 0;
+  }
+
+  .mb20 {
+    margin-bottom: 20px;
+  }
+}
+
+.update_password-modal {
+  .ant-modal-footer {
+    padding-top: 4px;
+  }
+}

@@ -1,0 +1,58 @@
+.open-api {
+  height: 100%;
+  margin: 0 32px;
+  background: #fff;
+  border-radius: 8px;
+
+  .title {
+    position: relative;
+    color: #1e222a;
+    font-weight: 550;
+    font-size: 16px;
+    margin-bottom: 18px;
+
+    &::before {
+      position: absolute;
+      top: 20%;
+      left: -10px;
+      width: 4px;
+      height: 60%;
+      background: #2177d1;
+      border-radius: 2px;
+      content: '';
+    }
+  }
+
+  .item-details-case {
+    padding-left: 0;
+    width: 100%;
+
+    .content-item_txt {
+      a {
+        padding: 2px 8px;
+        margin-left: -8px;
+        border-radius: 4px;
+
+        &:hover {
+          background: rgba($color: #2177d1, $alpha: 10%);
+        }
+
+        &:active {
+          color: #2177d1;
+          background: rgba($color: #2177d1, $alpha: 20%);
+        }
+      }
+    }
+  }
+
+  .blank-item {
+    display: none !important;
+  }
+
+  .examineBtn {
+    border-radius: 4px;
+    color: #fff;
+    background: linear-gradient(90deg, #3ac2f0 0%, #2aa4f5 100%);
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,65 @@
+.images-ci-life-cycle {
+  .ci-content {
+    justify-content: space-between;
+
+    .ci-chart {
+      .ci-chart-content {
+        height: 280px;
+      }
+
+      .ant-tabs-top > .ant-tabs-nav::before {
+        border-bottom: 0;
+      }
+    }
+
+    .ci-top5 {
+      padding-left: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .top5-content {
+        position: relative;
+        display: grid;
+
+        &::before {
+          content: '';
+          border-left: 1px solid #f4f6fa;
+          position: absolute;
+          height: 100%;
+          left: -24px;
+        }
+      }
+    }
+
+    > div {
+      flex: 1;
+    }
+  }
+}
+
+.top5-progress {
+  display: flex;
+  margin: 4px 0 16px;
+
+  .ant-progress-outer {
+    display: flex;
+  }
+}
+
+@media screen and (width <= 1440px) {
+  body {
+    .top5-progress {
+      margin: 2px 0 12px;
+    }
+
+    .images-ci-life-cycle .ci-content .ci-chart .ci-chart-content {
+      height: 240px;
+      overflow: hidden;
+    }
+
+    .scale {
+      margin-top: -4px;
+    }
+  }
+}

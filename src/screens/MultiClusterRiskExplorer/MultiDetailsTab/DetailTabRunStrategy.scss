@@ -1,0 +1,33 @@
+@import '../../../style//function.scss';
+
+.detail-isolationStrategy-case {
+  .ant-tabs-nav {
+    box-sizing: border-box;
+    width: vm(336);
+    min-width: 200px;
+    padding-top: 42px;
+    background: #ecf1f6;
+    border: 1px solid #dfe1e6;
+
+    .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+      display: none;
+    }
+  }
+
+  div[role='tabpanel'] {
+    padding-left: 0 !important;
+  }
+
+  .initCard {
+    position: relative;
+
+    .tab-title-pos {
+      position: absolute;
+      top: 54px;
+      left: 24px;
+      z-index: 100;
+      color: #929db2;
+      font-size: 16px;
+    }
+  }
+}

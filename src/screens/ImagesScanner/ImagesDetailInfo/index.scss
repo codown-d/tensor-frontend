@@ -1,0 +1,59 @@
+.policy-action-alarm,
+.policy-action-block {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        margin-top: -4px;
+        left: -16px;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+    }
+}
+
+.policy-action-block {
+    color: #e95454;
+
+    &::before {
+        background: #e95454;
+    }
+}
+
+.policy-action-alarm {
+    &::before {
+        background: #ffc423;
+    }
+}
+
+.cvssv3-vector {
+    width: 150px;
+    padding: 6px 0;
+
+    .cvssv3-vectortitle {
+        font-weight: 550;
+        color: #3e4653;
+        line-height: 20px;
+    }
+
+    .cvssv3-vector-item {
+        padding: 6px 0;
+        color: #6c7480;
+    }
+}
+
+div.modal-policy-snapshot {
+    .art-template-title {
+        width: 150px;
+    }
+}
+
+.links {
+    line-height: 22px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

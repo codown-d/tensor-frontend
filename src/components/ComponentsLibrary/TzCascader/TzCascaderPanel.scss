@@ -1,0 +1,153 @@
+.tz-cascader-panel {
+  padding-top: 0;
+
+  .tz-checkbox {
+    margin-left: 11px !important;
+  }
+
+  .tz-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    min-height: 36px;
+    line-height: 36px;
+
+    > div {
+      padding: 8px 0;
+    }
+
+    .disabled {
+      cursor: not-allowed;
+      color: #b3bac6;
+
+      .ant-checkbox-disabled {
+        opacity: 1;
+      }
+    }
+  }
+
+  .tz-panel-menu {
+    flex-grow: 1;
+    min-width: 111px;
+    max-height: 198px;
+    overflow: auto;
+    vertical-align: top;
+    list-style: none;
+    padding: 8px 0;
+  }
+
+  .tz-panel-option-item {
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    padding: 8px 4px;
+    line-height: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #3e4653;
+
+    &:hover {
+      background-color: rgb(33 119 209 / 5%);
+    }
+
+    &-hidden {
+      display: none;
+    }
+  }
+
+  .tz-panel-menu-item-content {
+    width: 100%;
+    flex: auto;
+    margin-left: 8px;
+    max-width: 365px;
+    padding-right: 12px;
+    white-space: initial;
+
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    .highlight {
+      color: #ff4d4f;
+    }
+  }
+
+  .tz-panel-option-item-haschildren {
+    .tz-panel-menu-item-content {
+      padding-right: 8px;
+    }
+  }
+
+  .tz-panel-menu-item-expand-icon {
+    color: rgb(0 0 0 / 45%);
+    font-size: 10px;
+  }
+
+  .item-act {
+    font-weight: 400;
+    background-color: rgb(33 119 209 / 5%);
+  }
+
+  .icon-sousuo {
+    margin: auto 2px;
+    font-size: 12px;
+    color: #b3bac6;
+  }
+
+  .tz-panel-menu-item-rw {
+    color: #b3bac6;
+  }
+
+  .tz-panel-option-item-checkbox {
+    margin-left: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: -5px;
+  }
+
+  .ant-input-affix-wrapper-status-error:not(
+      .ant-input-affix-wrapper-disabled,
+      .ant-input-affix-wrapper-borderless
+    ).ant-input-affix-wrapper {
+    border-color: #e7e9ed;
+    box-shadow: none;
+  }
+
+  .ant-input-affix-wrapper-status-error:not(
+      .ant-input-affix-wrapper-disabled,
+      .ant-input-affix-wrapper-borderless
+    ).ant-input-affix-wrapper:hover {
+    border-color: #2177d1;
+  }
+}
+
+.tz-cascader-menus {
+  display: flex;
+  flex-direction: row;
+
+  .tz-cascader-menu {
+    overflow: hidden;
+    position: relative;
+
+    .tz-selection {
+      position: sticky;
+      top: 0;
+      padding: 8px 8px 0;
+      background: #fff;
+      z-index: 9;
+    }
+
+    & + .tz-cascader-menu {
+      border-left: 1px solid #e7e9ed;
+    }
+  }
+}
+
+.tz-cascader .ant-select-selection-overflow-item {
+  top: auto !important;
+}
+
+.tz-cascader-popupClassName {
+  padding: 0;
+
+  .ant-cascader-menu {
+    margin: 0;
+  }
+}

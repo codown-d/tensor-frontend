@@ -1,0 +1,56 @@
+.formatter-group {
+  display: inline-block;
+
+  .all-num {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #3e4653;
+  }
+
+  .used-num,
+  .remaining-num {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #6c7480;
+    padding-left: 14px;
+    margin-top: 6px;
+  }
+
+  .used-num {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      margin-right: 6px;
+      display: inline-block;
+      border-radius: 5px;
+      background: #2d94ff;
+    }
+  }
+
+  .remaining-num {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      margin-right: 6px;
+      display: inline-block;
+      border-radius: 5px;
+      background: #e7e9ed;
+    }
+  }
+}

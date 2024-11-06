@@ -1,0 +1,11 @@
+.TZ-icon {
+  display: inline-block;
+  margin-right: 8px;
+  margin-left: 8px;
+  animation: loadingCircle 1s linear infinite;
+  @keyframes loadingCircle {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+}

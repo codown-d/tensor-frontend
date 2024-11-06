@@ -1,0 +1,66 @@
+.event-configure {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    // padding: 8px 0px 24px;
+    .title {
+        padding: 0 24px 16px;
+    }
+
+    .ant-tabs.ant-tabs-top {
+        .ant-tabs-nav {
+            margin-bottom: 20px;
+        }
+    }
+
+    .ant-tabs-content-holder {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .desc {
+        color: #1e222a;
+        font-weight: 550;
+        font-size: 20px;
+        line-height: 28px;
+        margin-left: 8px;
+    }
+
+    .syslog-title {
+        font-weight: 550;
+        font-size: 16px;
+        color: #3e4653;
+    }
+
+    .configure-base-case {
+        .flex-item {
+            align-items: center;
+        }
+
+        .art-template-content {
+            margin-right: 20px;
+        }
+    }
+
+    .dfas.top {
+        .art-template-title {
+            margin-top: 7px;
+        }
+    }
+
+    // whitelist
+    .action-group {
+        margin-bottom: 12px;
+
+        .h36.tz-selection.tz-input.tz-input-search {
+            .ant-input-affix-wrapper.tz-input-search {
+                height: 36px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+
+}

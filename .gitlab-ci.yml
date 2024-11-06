@@ -1,0 +1,43 @@
+image: harbor.tensorsecurity.com/library/node:18.18.1
+
+variables:
+  NODE_OPTIONS: '--max_old_space_size=4096'
+  KUBERNETES_CPU_REQUEST: 2
+  KUBERNETES_MEMORY_REQUEST: 8Gi
+  MIRROR_SOURCE: mirrors.tuna.tsinghua.edu.cn
+
+workflow:
+  rules:
+    - if: '$CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /^master/'
+      when: always
+
+stages:
+  - build
+
+### build
+build:
+  stage: build
+  retry: 2
+  resource_group: build
+  tags:
+    - k8s-frontend
+  before_script:
+    ## Configuration of Git
+    - git config --global user.email tensor-ci-robot@tensorsecurity.cn
+    - git config --global user.name tensor-ci-robot
+    - git merge origin/master
+    ## Configuration of npm
+    - apt-get install nasm -y
+    - npm conf set registry https://registry.npmmirror.com
+    - npm config set registry 'https://registry.npmmirror.com'
+    - npm config set @tz:registry https://npm.tensorsecurity.cn
+    - npm install -g pnpm --registry=https://registry.npmmirror.com
+    - 'sed -i "s#http://console.tensorsecurity.c0##g" src/services/DataService.ts'
+    - pnpm i
+    - cp ./docker/Dockerfile .
+    - 'sed -i "/.*&& apk upgrade.*/d" Dockerfile'
+  script:
+    - 'CI="false" pnpm build'
+    - 'cp  ~/.docker/openapi-html/*.html ./build/apiguide/'
+    - 'docker build  -t harbor.tensorsecurity.com/tensorsecurity/frontend:ci --build-arg MIRROR_SOURCE=${MIRROR_SOURCE} .'
+    - docker rmi harbor.tensorsecurity.com/tensorsecurity/frontend:ci || true

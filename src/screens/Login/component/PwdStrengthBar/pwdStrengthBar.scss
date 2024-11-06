@@ -1,0 +1,44 @@
+.pwd-strength-bar {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &-name {
+    margin-right: 4px;
+  }
+
+  &-item {
+    width: 27px;
+    height: 8px;
+    margin-left: 4px;
+    background: #e7e9ed;
+
+    &:first-of-type {
+      border-radius: 3px 0 0 3px;
+    }
+
+    &:last-of-type {
+      border-radius: 0 3px 3px 0;
+    }
+
+    &.weak {
+      background: #e95454;
+      opacity: 0.6;
+    }
+
+    &.general {
+      background: #ffc423;
+      opacity: 0.6;
+    }
+
+    &.strong {
+      background: #52c41a;
+      opacity: 0.6;
+    }
+
+    &.veryStrong {
+      background: #52c41a;
+    }
+  }
+}

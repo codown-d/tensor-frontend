@@ -1,0 +1,17 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false
+max_line_length = 0               # 在指定的字符数后强制换行。off 关闭此功能
+
+[package.json]                    # 对 package.json 生效
+indent_size = 2

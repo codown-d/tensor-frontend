@@ -1,0 +1,28 @@
+$colors: (
+  'color-critical': #a84242,
+  'color-high': #e05e5f,
+  'color-medium': #f58531,
+  'color-low': #f8bf24,
+  'color-negligible': #a6acbd,
+);
+
+@each $className, $color in $colors {
+  .#{$className} {
+    .checkbox-material {
+      .check {
+        color: $color;
+      }
+
+      &::before {
+        background-color: $color;
+      }
+    }
+
+    input[type='checkbox']:checked + .checkbox-material {
+      .check {
+        color: $color;
+        background: white;
+      }
+    }
+  }
+}

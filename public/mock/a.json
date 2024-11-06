@@ -1,0 +1,215 @@
+{
+  "apiVersion": "2.0",
+  "data": {
+    "items": [
+      {
+        "children": [],
+        "pProcessName": "",
+        "pid": "4036455",
+        "ppid": "4036453",
+        "processName": "nc",
+        "signals": [
+          {
+            "cluster": "2981527647",
+            "customKV": {
+              "_cluster_key": "2981527647",
+              "_uuid": "4475046844257612560",
+              "auid": "-1",
+              "容器ID": "61f4b1ca88b4",
+              "容器名称": "k8s_zookeeper_kafkatest-zookeeper-0_tensorsec_c1cf5e57-7c24-48e7-ab00-203482087bd7_0",
+              "容器镜像": "bitnami/zookeeper",
+              "容器镜像Tag": "3.7.0-debian-10-r188",
+              "父进程号": "4036453",
+              "父进程名称": "timeout(4036453)",
+              "用户名": "",
+              "用户名称": "\u003cNA\u003e",
+              "系统调用": "execve",
+              "进程号": "4036455",
+              "进程名称": "nc(4036455)",
+              "进程命令行": "nc -w 2 localhost 2181"
+            },
+            "id": "62038dc886e83b3454484fbf",
+            "namespace": "tensorsec",
+            "nodeKey": "kafkatest-zookeeper",
+            "nodeType": "StatefulSet",
+            "podName": "kafkatest-zookeeper-0",
+            "podUid": "c1cf5e57-7c24-48e7-ab00-203482087bd7",
+            "rule": {
+              "category": "ATT\u0026CK",
+              "customKV": {
+                "处置建议": "使用免疫防御训练应用，阻拦新的或被修改的可执行文件，限制执行命令的用户和接收对象。",
+                "是否需要紧急处理": "是",
+                "规则类型": "命令执行"
+              },
+              "description": "容器里运行netcat(反弹Shell攻击的风险",
+              "displayAdapter": {
+                "module": "容器安全"
+              },
+              "module": "ContainerSecurity",
+              "name": "Running netcat in a container",
+              "severity": 9
+            },
+            "timestamp": 1644400072287
+          }
+        ]
+      },
+      {
+        "children": [],
+        "pProcessName": "",
+        "pid": "4036492",
+        "ppid": "4036490",
+        "processName": "nc",
+        "signals": [
+          {
+            "cluster": "2981527647",
+            "customKV": {
+              "_cluster_key": "2981527647",
+              "_uuid": "5999456017365436774",
+              "auid": "-1",
+              "容器ID": "61f4b1ca88b4",
+              "容器名称": "k8s_zookeeper_kafkatest-zookeeper-0_tensorsec_c1cf5e57-7c24-48e7-ab00-203482087bd7_0",
+              "容器镜像": "bitnami/zookeeper",
+              "容器镜像Tag": "3.7.0-debian-10-r188",
+              "父进程号": "4036490",
+              "父进程名称": "timeout(4036490)",
+              "用户名": "",
+              "用户名称": "\u003cNA\u003e",
+              "系统调用": "execve",
+              "进程号": "4036492",
+              "进程名称": "nc(4036492)",
+              "进程命令行": "nc -w 2 localhost 2181"
+            },
+            "id": "62038dc886e83b3454484fc0",
+            "namespace": "tensorsec",
+            "nodeKey": "kafkatest-zookeeper",
+            "nodeType": "StatefulSet",
+            "podName": "kafkatest-zookeeper-0",
+            "podUid": "c1cf5e57-7c24-48e7-ab00-203482087bd7",
+            "rule": {
+              "category": "ATT\u0026CK",
+              "customKV": {
+                "处置建议": "使用免疫防御训练应用，阻拦新的或被修改的可执行文件，限制执行命令的用户和接收对象。",
+                "是否需要紧急处理": "是",
+                "规则类型": "命令执行"
+              },
+              "description": "容器里运行netcat(反弹Shell攻击的风险",
+              "displayAdapter": {
+                "module": "容器安全"
+              },
+              "module": "ContainerSecurity",
+              "name": "Running netcat in a container",
+              "severity": 9
+            },
+            "timestamp": 1644400072298
+          }
+        ]
+      },
+      {
+        "children": [],
+        "pProcessName": "",
+        "pid": "4036981",
+        "ppid": "4036979",
+        "processName": "nc",
+        "signals": [
+          {
+            "cluster": "2981527647",
+            "customKV": {
+              "_cluster_key": "2981527647",
+              "_uuid": "2226113602724713332",
+              "auid": "-1",
+              "容器ID": "61f4b1ca88b4",
+              "容器名称": "k8s_zookeeper_kafkatest-zookeeper-0_tensorsec_c1cf5e57-7c24-48e7-ab00-203482087bd7_0",
+              "容器镜像": "bitnami/zookeeper",
+              "容器镜像Tag": "3.7.0-debian-10-r188",
+              "父进程号": "4036979",
+              "父进程名称": "timeout(4036979)",
+              "用户名": "",
+              "用户名称": "\u003cNA\u003e",
+              "系统调用": "execve",
+              "进程号": "4036981",
+              "进程名称": "nc(4036981)",
+              "进程命令行": "nc -w 2 localhost 2181"
+            },
+            "id": "62038dc886e83b3454484fc1",
+            "namespace": "tensorsec",
+            "nodeKey": "kafkatest-zookeeper",
+            "nodeType": "StatefulSet",
+            "podName": "kafkatest-zookeeper-0",
+            "podUid": "c1cf5e57-7c24-48e7-ab00-203482087bd7",
+            "rule": {
+              "category": "ATT\u0026CK",
+              "customKV": {
+                "处置建议": "使用免疫防御训练应用，阻拦新的或被修改的可执行文件，限制执行命令的用户和接收对象。",
+                "是否需要紧急处理": "是",
+                "规则类型": "命令执行"
+              },
+              "description": "容器里运行netcat(反弹Shell攻击的风险",
+              "displayAdapter": {
+                "module": "容器安全"
+              },
+              "module": "ContainerSecurity",
+              "name": "Running netcat in a container",
+              "severity": 9
+            },
+            "timestamp": 1644400072313
+          }
+        ]
+      },
+      {
+        "children": [],
+        "pProcessName": "",
+        "pid": "4037001",
+        "ppid": "4036999",
+        "processName": "nc",
+        "signals": [
+          {
+            "cluster": "2981527647",
+            "customKV": {
+              "_cluster_key": "2981527647",
+              "_uuid": "2904324216607260392",
+              "auid": "-1",
+              "容器ID": "61f4b1ca88b4",
+              "容器名称": "k8s_zookeeper_kafkatest-zookeeper-0_tensorsec_c1cf5e57-7c24-48e7-ab00-203482087bd7_0",
+              "容器镜像": "bitnami/zookeeper",
+              "容器镜像Tag": "3.7.0-debian-10-r188",
+              "父进程号": "4036999",
+              "父进程名称": "timeout(4036999)",
+              "用户名": "",
+              "用户名称": "\u003cNA\u003e",
+              "系统调用": "execve",
+              "进程号": "4037001",
+              "进程名称": "nc(4037001)",
+              "进程命令行": "nc -w 2 localhost 2181"
+            },
+            "id": "62038dc886e83b3454484fc2",
+            "namespace": "tensorsec",
+            "nodeKey": "kafkatest-zookeeper",
+            "nodeType": "StatefulSet",
+            "podName": "kafkatest-zookeeper-0",
+            "podUid": "c1cf5e57-7c24-48e7-ab00-203482087bd7",
+            "rule": {
+              "category": "ATT\u0026CK",
+              "customKV": {
+                "处置建议": "使用免疫防御训练应用，阻拦新的或被修改的可执行文件，限制执行命令的用户和接收对象。",
+                "是否需要紧急处理": "是",
+                "规则类型": "命令执行"
+              },
+              "description": "容器里运行netcat(反弹Shell攻击的风险",
+              "displayAdapter": {
+                "module": "容器安全"
+              },
+              "module": "ContainerSecurity",
+              "name": "Running netcat in a container",
+              "severity": 9
+            },
+            "timestamp": 1644400072323
+          }
+        ]
+      }
+    ],
+    "itemsPerPage": 0,
+    "startIndex": 0,
+    "status": 0,
+    "totalItems": 0
+  }
+}

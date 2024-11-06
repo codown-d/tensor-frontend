@@ -1,0 +1,86 @@
+.d3-segment {
+  display: block;
+  background: #f5f7fa !important;
+  cursor: pointer;
+
+  &.d3-unavailable {
+    cursor: default;
+  }
+
+  &.motioned {
+    circle {
+      transition: all 0.5s;
+    }
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.3;
+  }
+
+  12% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  32% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  53% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.3;
+  }
+
+  73% {
+    opacity: 1;
+  }
+
+  96% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.linkLineSegs {
+  opacity: 1;
+  transition: opacity 0.25s;
+  animation: dash 100s linear infinite;
+  pointer-events: none;
+  stroke: #2aa4f5 !important;
+  stroke-dasharray: 5 !important;
+  marker-end: url('#arrow-dd') !important;
+  stroke-dashoffset: 10;
+
+  &.dim {
+    opacity: 0.1;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 1000;
+  }
+}

@@ -1,0 +1,113 @@
+.d3-component,
+.g-animate {
+  display: block;
+  cursor: pointer;
+
+  &.d3-unavailable {
+    cursor: default;
+  }
+
+  &.motioned {
+    circle {
+      transition: all 0.5s;
+    }
+  }
+}
+
+.animate-attention {
+  transition: fill 1.5s;
+  animation-name: circle1;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes circle1 {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.35;
+  }
+}
+
+#d3-chart {
+  position: relative;
+
+  .slider-case {
+    position: absolute;
+
+    // top: calc(100vh - 44px);
+    // left: 232px;
+    bottom: 20px;
+    left: 32px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+    .reducBtn {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #fff;
+      color: #6c7480;
+      padding: 4px;
+      text-align: center;
+      cursor: pointer;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .cont-case {
+      width: 120px;
+      border-radius: 24px;
+      background: #fff;
+
+      .ant-slider {
+        margin: 6px 12px;
+
+        .ant-slider-track {
+          background-color: #6c7480;
+        }
+
+        .ant-slider-handle {
+          border-color: #6c7480;
+          background-color: #6c7480;
+
+          &:focus {
+            box-shadow: 0 0 0 5px rgba($color: #6c7480, $alpha: 12%);
+          }
+        }
+      }
+    }
+
+    .slider-red-btn,
+    .slider-add-btn {
+      width: 24px;
+      height: 24px;
+      margin: 0 12px;
+      background: #fff;
+      color: #6c7480;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer;
+
+      &.pri-disabled {
+        color: #b3bac6;
+      }
+    }
+
+    .shadow-round {
+      box-shadow: 0 1px 12px rgb(144 168 205 / 25%);
+      border-radius: 20px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.license-list-case {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+
+  .title-txt {
+    margin: 20px 24px 18px;
+    display: block;
+    position: relative;
+    color: #1e222a;
+    font-weight: 550;
+    font-size: 16px;
+
+    &::before {
+      position: absolute;
+      top: 20%;
+      left: -10px;
+      width: 4px;
+      height: 60%;
+      background: #2177d1;
+      border-radius: 2px;
+      content: '';
+    }
+  }
+
+  .tag-span {
+    padding: 2px 8px;
+    margin-left: -8px;
+    border-radius: 4px;
+
+    &.safe {
+      color: #60ce77;
+      background: #eef9ef;
+    }
+
+    &.warn {
+      color: #ffc424;
+      background: #fff6dc;
+    }
+  }
+}
+
+.set-license-modal {
+  .content-case {
+    .l-title {
+      min-width: 134px;
+      text-align: left;
+    }
+
+    .tz-selection {
+      flex-basis: 300px;
+      min-width: 150px;
+    }
+  }
+
+  .mb30 {
+    margin-bottom: 30px;
+  }
+
+  .mb50 {
+    margin-bottom: 50px;
+  }
+
+  .mt50 {
+    margin-top: 50px;
+  }
+}

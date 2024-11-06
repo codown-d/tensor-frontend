@@ -1,0 +1,11 @@
+.ts-select-input {
+  width: 100%;
+
+  .ts-select-label {
+    width: 98px;
+  }
+
+  .inner-input {
+    width: calc(100% - 108px);
+  }
+}

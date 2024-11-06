@@ -1,0 +1,11 @@
+.checkbox-label {
+  padding-left: 5px;
+  white-space: nowrap;
+  font-weight: 400;
+  color: #6c7480;
+}
+
+.checkbox.disabled {
+  color: silver !important;
+  font-style: italic !important;
+}

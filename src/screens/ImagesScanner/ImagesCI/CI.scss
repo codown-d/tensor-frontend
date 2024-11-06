@@ -1,0 +1,60 @@
+.ci-image {
+  .ci-image-name {
+    overflow: hidden;
+    font-size: 16px;
+    color: #3e4653;
+
+    .text-hover-copy {
+      font-size: 16px;
+    }
+  }
+
+  .ci-task-name {
+    margin-right: 4px;
+    background: rgb(33 119 209 / 5%);
+    color: #6c7480;
+    border-radius: 4px;
+  }
+}
+
+.ci--filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-title-content {
+  font-weight: 550;
+  color: #3e4653;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ci-tabs {
+  margin-right: 24px;
+
+  .ant-tabs-tab {
+    line-height: 24px;
+    padding-top: 0;
+    padding-bottom: 2px;
+    font-size: 14px;
+  }
+}
+
+.ci-top5-title {
+  clear: both;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6c7480;
+}
+
+.ci-questions {
+  color: #b3bac6;
+}
+
+.second-title {
+  .flex-r {
+    color: rgb(62 70 83);
+    font-weight: 550;
+    font-size: 14px;
+  }
+}

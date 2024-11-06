@@ -1,0 +1,84 @@
+.art-template {
+    color: #6c7480;
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .flex-item {
+        // overflow: hidden; //解决高度正好产生滚动条
+        // margin-bottom: 12px; // webshell优化功能2022 1208 调整item下间距20->16px
+        margin-bottom: 20px;
+        align-items: center;
+
+        // min-height: 28px; //2022 12 27修改最小高度28
+        line-height: 22px;
+    }
+
+    .flex-item.item-flex-start {
+        align-items: flex-start !important;
+    }
+
+    .flex-item.item-flex-center {
+        align-items: center !important;
+    }
+
+    .art-template-title {
+        min-width: 84px;
+        margin-right: 4px;
+        text-align: left;
+        line-height: 22px;
+
+        &.h100 {
+            height: 100%;
+        }
+    }
+
+    .art-template-content {
+        color: #3e4653;
+        flex: 1;
+        word-break: break-all;
+        width: 0;
+        margin-right: 0;
+        text-align: left;
+        display: flex; //处理单行影藏没有居中对齐
+        white-space: normal;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &.wautoEN {
+        .art-template-title {
+            width: auto;
+        }
+    }
+
+    &.mb0 {
+        .flex-item {
+            margin-bottom: 0;
+        }
+    }
+
+    &.item-mb8 {
+        .flex-item {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.ant-drawer-body .art-template .flex-item {
+    margin-bottom: 16px;
+}
+
+//漏洞样式
+div.vuln-detail {
+    div.art-template-title {
+        width: 104px;
+    }
+
+    .art-template-content {
+        margin-right: 0;
+    }
+}

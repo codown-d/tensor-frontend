@@ -1,0 +1,20 @@
+.tz-switch {
+  background: #b3bac6;
+
+  .ant-switch-inner {
+    font-size: 14px;
+    margin: 0 10px 0 30px;
+  }
+
+  .ant-switch-loading-icon {
+    top: 5px;
+  }
+
+  &.ant-switch-checked {
+    background: #2177d1;
+
+    .ant-switch-inner {
+      margin: 0 30px 0 10px;
+    }
+  }
+}

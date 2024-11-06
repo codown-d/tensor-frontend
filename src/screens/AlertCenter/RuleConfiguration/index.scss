@@ -1,0 +1,40 @@
+@import '../component/index';
+
+.rule-jump {
+  background: rgb(33 119 209 / 5%);
+  border-radius: 8px;
+  padding: 16px 24px;
+  color: rgb(33 119 209 / 100%);
+  line-height: 22px;
+  font-size: 14px;
+
+  & > div span {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.rule-configuration-operations {
+  display: flex;
+  align-items: center;
+
+  .edit-button {
+    margin-left: 4px;
+  }
+
+  .ant-switch {
+    min-width: 40px;
+    height: 20px;
+    line-height: 20px;
+  }
+}
+
+.rule-custom-modal.rule-modal {
+  .tz-form {
+    margin-bottom: 0;
+  }
+
+  .type-list {
+    margin-bottom: 0;
+  }
+}

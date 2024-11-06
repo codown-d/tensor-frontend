@@ -1,0 +1,95 @@
+.layout-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+    overflow-y: overlay;
+    flex: 1;
+    height: 100%;
+    position: relative;
+
+    .layout-main-container {
+        flex: 1;
+        width: 0;
+        height: max-content;
+
+        .layout-content {
+            flex: 1;
+        }
+    }
+}
+
+.initial-loding {
+    width: 100%;
+    height: 100%;
+}
+
+.demo-mode-indicator {
+    position: fixed;
+    bottom: 60px;
+    left: calc(50% - 150px + 100px);
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+    background: #7979795e;
+    border-radius: 3px;
+
+    &:hover {
+        background: white;
+    }
+}
+
+.with-authentication {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hideSideCls {
+    box-shadow: 1px 0 8px rgb(144 168 205 / 25%);
+    z-index: 100;
+}
+
+.ant-back-top {
+    right: 6px;
+    width: 48px;
+    height: 48px;
+    bottom: 140px;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow:
+        0 0 24px rgb(33 119 209 / 5%),
+        0 2px 8px rgb(0 0 0 / 5%),
+        0 4px 16px rgb(0 0 0 / 5%);
+
+    :hover {
+        background: #2177d1;
+        color: #fff;
+        box-shadow: 0 2px 16px rgb(33 119 209 / 25%);
+    }
+}
+
+.go-top {
+    width: 48px;
+    height: 48px;
+    box-shadow:
+        0 4px 16px 0 rgb(0 0 0 / 5%),
+        0 2px 8px 0 rgb(0 0 0 / 5%),
+        0 0 24px 0 rgb(33 119 209 / 5%);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #8e97a3;
+}
+
+.header-shadow {
+    box-shadow: 0 1px 12px rgb(144 168 205 / 25%);
+}

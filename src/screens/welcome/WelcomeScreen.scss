@@ -1,0 +1,138 @@
+.welcome-screen {
+  margin: 0 32px;
+
+  .graph-space-case {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
+  .chart-wraper {
+    overflow: hidden;
+
+    > div:nth-of-type(2) {
+      flex-grow: 1;
+      margin-left: 20px;
+      background: #fff;
+
+      .discover_chart_title {
+        margin: 0 0 14px;
+      }
+
+      .discover_chart {
+        flex-direction: column;
+
+        .discover_chart_box,
+        .discover_top5 {
+          width: 100%;
+        }
+
+        .top5_list_box {
+          padding: 0;
+          border: none;
+        }
+
+        .discover_top5 {
+          flex: none;
+          height: 89px;
+
+          .discover_chart_title {
+            margin: 30px 0 20px;
+            padding-left: 0;
+          }
+        }
+
+        .top5_item {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .titles,
+  .compliance-item p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1e222a;
+  }
+
+  .compliance-item p {
+    padding-left: 24%;
+    padding-bottom: 16px;
+  }
+
+  .compliance-item-border {
+    .compliance-div1 {
+      min-height: 150px;
+      border-left: 1px solid rgb(239 240 242);
+      border-right: 1px solid rgb(239 240 242);
+    }
+  }
+
+  .scanner-overview-wraper {
+    margin: 20px 0;
+
+    .images-overview,
+    .reject_overview {
+      .ant-card-head-title {
+        padding-top: 16px;
+      }
+    }
+  }
+
+  .overview-wraper-select {
+    font-size: 14px;
+    color: #6c7480;
+  }
+
+  .event-summary-chart .event-summary-item_1 {
+    width: 100%;
+  }
+
+  .w-chart-list {
+    .tz-card:nth-of-type(2) .ant-card-body {
+      border-left: 1px solid #eff0f2;
+      border-right: 1px solid #eff0f2;
+    }
+  }
+}
+
+.head-case {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+
+  .title-txt {
+    color: #1e222a;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: PingFangSC-Semibold, 'PingFang SC';
+    line-height: 18px;
+  }
+
+  .report-txt {
+    display: inline-block;
+    color: #2177d1;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba($color: #dfe1e6, $alpha: 60%);
+    }
+
+    &:active {
+      background: rgba($color: #dfe1e6, $alpha: 100%);
+    }
+
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+}

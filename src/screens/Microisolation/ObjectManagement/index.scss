@@ -1,0 +1,47 @@
+.namespace-modules {
+    .title {
+        font-weight: 400;
+        font-size: 14px;
+        color: #3E4653;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .namespace-m-item {
+
+        height: 36px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #3E4653;
+        line-height: 36px;
+        cursor: pointer;
+    }
+
+    .namespace-group {
+        padding: 0 8px;
+        margin-left: -8px;
+        margin-right: -8px;
+        color: #3E4653;
+        font-size: 14px;
+
+        .icon-lajitong {
+            width: 16px;
+            opacity: 0;
+        }
+
+        &:hover {
+            background: #F4F8FC;
+            border-radius: 8px 8px 8px 8px;
+
+            i.icon-lajitong {
+                opacity: 1;
+                color: #D81E06
+            }
+        }
+    }
+}
+
+.act-group {
+    background: #F4F8FC;
+    border-radius: 8px 8px 8px 8px;
+}

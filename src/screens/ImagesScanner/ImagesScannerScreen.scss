@@ -1,0 +1,57 @@
+.scan-result-case {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .search-case-wrapper {
+    background: #fff;
+
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+
+      .ant-tabs {
+        overflow: initial;
+
+        .ant-tabs-nav {
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+
+  .action-bar-case {
+    padding-top: 10px;
+    padding-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s;
+
+    .action-bar-case-btns {
+      position: absolute;
+      width: 100%;
+      padding: 10px 0;
+      top: 0;
+      right: 0;
+      z-index: 98;
+    }
+  }
+
+  .icon-list {
+    .iconfont:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.scan-config {
+  .scan-config-btn .dom-inline.w180 {
+    color: #354155;
+  }
+}
+
+.tz-tag.scanner-name {
+  background: rgb(33 119 209 / 5%);
+  color: #6c7480;
+  border-radius: 4px;
+}

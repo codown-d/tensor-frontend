@@ -1,0 +1,20 @@
+.ts-line-chart {
+  &-header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+
+    .title {
+      font-weight: 600;
+    }
+  }
+
+  .bizcharts {
+    .g2-tooltip {
+      padding-bottom: 12px !important;
+    }
+  }
+}

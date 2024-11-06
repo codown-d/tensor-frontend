@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <base href="/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta name="description" content="让容器运行在安全的环境之中。" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/font/iconfont.css" />
+    <link rel="stylesheet" href="/images/theme.css" />
+    <title><%- title %></title>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/moment/moment.min.js"></script>
+    <script src="/js/moment/locales.min.js"></script>
+    <script src="/js/react/react.production.min.js"></script>
+    <script src="/js/react/react-dom.production.min.js"></script>
+    <script src="/js/BizCharts/BizCharts.js"></script>
+    <script src="/js/nprogress/nprogress.js"></script>
+    <script src="/js/ECharts/dist/echarts.min.js"></script>
+    <script src="/js/axios/1.2.2/axios.min.js"></script>
+    <script src="/js/qrcode.min.js"></script>
+  </head>
+  <body>
+    <script>
+      document.body.classList.add('lang-' + (window.localStorage.getItem('language') || 'zh'));
+      window.addEventListener(
+        'message',
+        function (e) {
+          try {
+            const data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+            if (typeof data['ai-jwt-token'] == 'undefined') return;
+            const jwToken = data?.['ai-jwt-token'] ?? '';
+            const token = window.localStorage.getItem('token') ?? '';
+            if (!jwToken) {
+              window.location.reload();
+            } else {
+              if (jwToken == token) {
+                return;
+              }
+              axios({
+                url: '/api/v2/usercenter/profile',
+                method: 'get',
+                headers: { 'ai-jwt-token': jwToken },
+              })
+                .then((res) => {
+                  window.localStorage.setItem('userInformation', JSON.stringify(res.data.data.item));
+                  window.localStorage.setItem('token', jwToken);
+                  window.location.reload();
+                })
+                .catch(function (error) {
+                  console.log('ai-jwt-token', jwToken);
+                  window.location.reload();
+                });
+            }
+          } catch (error) {
+            console.log(error);
+          }
+        },
+        false,
+      );
+    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

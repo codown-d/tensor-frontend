@@ -1,0 +1,22 @@
+.Popover-above {
+  z-index: 1000;
+}
+
+.Popover-body {
+  z-index: 1000;
+  display: inline-flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 50vw;
+  padding: 10px 20px;
+  color: white;
+  background: #2b3a61;
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 12px 0 rgb(43 58 97 / 26%);
+
+  span {
+    color: inherit;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}

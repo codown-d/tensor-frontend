@@ -1,0 +1,39 @@
+.micr-policy-notification,
+.mark-loading-notification {
+  padding: 0;
+  width: fit-content;
+  margin-right: -24px;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+
+  .ant-notification-notice-message {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .ant-notification-notice-close {
+    top: 8px;
+
+    &:hover {
+      color: #2177d1;
+    }
+  }
+
+  .notification-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 20px rgb(144 168 205 / 25%);
+  }
+  .notification-desc {
+    padding: 8px 20px;
+  }
+
+  .notification-hidden {
+    background: #fff;
+    border-radius: 36px 0 0 36px;
+    .notification-desc {
+      padding: 8px 14px 8px 16px;
+    }
+  }
+}

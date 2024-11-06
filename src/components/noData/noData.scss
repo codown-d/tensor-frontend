@@ -1,0 +1,36 @@
+.nodata {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 200px;
+    height: auto;
+    user-select: none;
+
+    &.small {
+      width: 150px;
+    }
+  }
+
+  span {
+    display: block;
+    margin-top: 20px;
+    color: #b3bac6;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    user-select: none;
+  }
+}
+
+.ant-select-item-empty {
+  .nodata {
+    padding: 12px 0;
+  }
+}

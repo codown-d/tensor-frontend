@@ -1,0 +1,30 @@
+.nonepage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  padding-bottom: 24px;
+
+  img {
+    display: block;
+    width: 200px;
+    height: auto;
+  }
+
+  span {
+    margin-top: 20px;
+    color: #7d8799;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  i {
+    color: #008ae5;
+    cursor: pointer;
+  }
+}

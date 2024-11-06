@@ -1,0 +1,38 @@
+/*
+Tittle 组件样式
+*/
+.dock_h_title-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dock_h_title {
+  position: relative;
+  padding-left: 12px;
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: '';
+    width: 4px;
+    height: 16px;
+    margin-top: -8px;
+    background: #2177d1;
+    border-radius: 2px;
+  }
+
+  .title_text {
+    color: #151b26;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+  }
+}
+
+.dock_h_title.title_text {
+  font-size: 16px;
+  color: #1e222a;
+}

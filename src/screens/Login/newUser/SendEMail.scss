@@ -1,0 +1,15 @@
+.code-case {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 368px;
+  margin-bottom: 30px;
+
+  .imgCode {
+    height: 36px;
+  }
+
+  img {
+    margin-left: 12px;
+  }
+}

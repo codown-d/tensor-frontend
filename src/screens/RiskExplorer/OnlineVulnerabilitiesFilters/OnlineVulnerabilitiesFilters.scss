@@ -1,0 +1,315 @@
+@import './CustomColorCheckBoxes';
+
+.online-vulnerabilities-filters.filter-group {
+  background: #fff;
+  padding-top: 4px;
+  transition: all 300ms cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  overflow-x: hidden;
+  height: calc(100vh - 72px);
+  flex-shrink: 0;
+  z-index: 1;
+
+  &.show {
+    flex-basis: 240px;
+  }
+
+  &.close {
+    flex-basis: 0;
+
+    // height: 32px;
+  }
+
+  .icon-case {
+    color: #b3bac6;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    transform: rotate(-90deg);
+    display: inline-block;
+
+    &:hover {
+      color: #2177d1;
+    }
+
+    &.float-close-btn {
+      position: fixed;
+      top: 88px;
+      right: 20px;
+      transform: rotate(90deg);
+    }
+  }
+
+  .minw240 {
+    min-width: 240px;
+  }
+
+  .btn-title-case {
+    color: #3e4653;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: -4px;
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3e4653;
+  }
+
+  .tensorCheckBoxGroup.check_list {
+    .tensorCheckBox {
+      padding: 3px 15px;
+      transition: all linear 300ms;
+      background: #f4f6fa;
+      width: 100%;
+      margin-top: 12px;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 3px;
+        height: 100%;
+        background: #e7e9ed;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      &.checked {
+        background: rgb(33 119 209 / 5%);
+
+        .label {
+          font-weight: 400;
+        }
+
+        &::before {
+          animation: example 300ms linear;
+          background: #2177d1;
+        }
+      }
+
+      .checkbox {
+        display: none;
+      }
+
+      .label {
+        font-size: 14px;
+        line-height: 22px;
+        color: #3e4653;
+      }
+
+      &.criticalLevel.checked {
+        background: rgb(158 0 0 / 10%);
+
+        &::before {
+          animation: example 300ms linear;
+          background: #9e0000;
+        }
+      }
+
+      &.highLevel.checked {
+        background: rgb(233 84 84 / 10%);
+
+        &::before {
+          animation: example 300ms linear;
+          background: #e95454;
+        }
+      }
+
+      &.mediumLevel.checked {
+        background: rgb(255 138 52 / 10%);
+
+        &::before {
+          animation: example 300ms linear;
+          background: #ff8a34;
+        }
+      }
+
+      &.lowLevel.checked {
+        background: rgb(255 196 35 / 10%);
+
+        &::before {
+          animation: example 300ms linear;
+          background: #ffc423;
+        }
+      }
+
+      &.negligibleLevel.checked {
+        background: rgb(127 142 168 / 10%);
+
+        &::before {
+          animation: example 300ms linear;
+          background: #7f8ea8;
+        }
+      }
+
+      &.unknownLevel.checked {
+        background: rgb(171 186 209 / 10%);
+
+        &::before {
+          animation: example 300ms linear;
+          background: #abbad1;
+        }
+      }
+
+      // &.unknownLevel {
+      //   .checkbox {
+      //     border-color: #2177d1;
+      //   }
+      //   &.checked {
+      //     .checkbox {
+      //       & > span {
+      //         background: #2177d1;
+      //       }
+      //     }
+      //   }
+      // }
+      &.none {
+        opacity: 0;
+      }
+    }
+  }
+
+  // .filter_result {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: flex-start;
+  //   & > div {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: flex-start;
+  //     height: 20px;
+  //     padding: 0 6px;
+  //     font-size: 12px;
+  //     line-height: normal;
+  //     background: #364a70;
+  //     &::after {
+  //       margin-left: 4px;
+  //       font-size: 12px;
+  //       border-radius: 50%;
+  //       box-shadow: 0 0 2px rgba(40, 58, 92, 0.8);
+  //       transform: scale(0.8);
+  //       cursor: pointer;
+  //       content: 'X';
+  //     }
+  //     & > h5 {
+  //       margin-right: 5px;
+  //       margin-bottom: 0;
+  //       color: #fff;
+  //     }
+  //     & > span {
+  //       display: block;
+  //       max-width: 120px;
+  //       overflow: hidden;
+  //       white-space: nowrap;
+  //       text-overflow: ellipsis;
+  //       cursor: pointer;
+  //     }
+  //     & + div {
+  //       margin-left: 12px;
+  //     }
+  //   }
+  // }
+  // .bgCase {
+  //   box-shadow: -10px 4px 40px 0px rgba(23, 31, 71, 0.08);
+  //   border-radius: 8px;
+  // }
+  // .sub-action {
+  //   display: inline-block;
+  //   // padding-top: 22px;
+  //   color: #2177d1;
+  //   font-weight: 400;
+  //   font-size: 14px;
+  //   line-height: 22px;
+  //   cursor: pointer;
+  //   & + .sub-action {
+  //     margin-left: 12px;
+  //   }
+  // }
+}
+
+.test-filter-group {
+  background: #fff;
+  margin-top: 4px;
+  transition: all 300ms cubic-bezier(0.78, 0.14, 0.15, 0.86);
+
+  &.show {
+    flex-basis: 240px;
+    flex-shrink: 0;
+    height: calc(100vh - 72px);
+  }
+
+  &.close {
+    flex-basis: 0;
+    height: 32px;
+  }
+}
+
+.test-float-group {
+  position: fixed;
+  top: 88px;
+  right: 32px;
+  width: 20px;
+}
+
+// 内容信息框
+.detail-drawer-group {
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  background: #fff;
+  box-shadow: 0 1px 12px rgb(144 168 205 / 25%);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 300ms cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  max-height: calc(100vh - 155px);
+  display: flex;
+  flex-flow: column;
+  z-index: 100;
+
+  &.show {
+    width: 420px;
+
+    // min-width: 400px;
+    min-height: 120px;
+
+    // height: 400px;
+  }
+
+  &.close {
+    width: 0;
+
+    // min-width: 0px;
+    // height: 400px;
+    min-height: 0;
+  }
+
+  .detail-head-group {
+    padding: 16px 20px 14px;
+    box-sizing: border-box;
+
+    // flex-basis: 56px;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    // white-space: nowrap;
+  }
+
+  .detail-content-group {
+    padding: 0 0 24px;
+    box-sizing: border-box;
+    flex: 1;
+    overflow: hidden scroll;
+  }
+}
+
+@keyframes example {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 100%;
+  }
+}

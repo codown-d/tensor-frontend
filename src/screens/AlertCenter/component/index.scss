@@ -1,0 +1,46 @@
+.rule-custom-modal {
+  .config-value {
+    .ant-select-selector {
+      height: 102px;
+      align-items: flex-start;
+    }
+  }
+
+  .ant-form-item.mb0 {
+    margin-bottom: 0;
+  }
+
+  .select-tag {
+    .ant-select-selector {
+      overflow-y: auto;
+
+      .ant-select-selection-item {
+        height: 28px;
+        border: none;
+      }
+
+      .ant-select-selection-search-input {
+        height: 34px;
+        line-height: 34px;
+      }
+    }
+
+    .ant-select-selection-placeholder {
+      left: 12px;
+      top: 5px;
+      line-height: 28px;
+      overflow: hidden;
+      white-space: normal;
+      transform: none;
+    }
+
+    .tz-select-selection-item {
+      padding: 0 8px;
+      margin-right: 8px;
+    }
+  }
+
+  .ant-modal-footer {
+    padding-top: 4px;
+  }
+}

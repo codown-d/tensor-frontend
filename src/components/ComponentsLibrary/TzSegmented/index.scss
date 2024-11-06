@@ -1,0 +1,20 @@
+.tz-segmented {
+  .ant-segmented {
+    padding: 4p;
+  }
+
+  .ant-segmented-item-label {
+    min-height: 28px;
+    line-height: 28px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .ant-segmented-item-selected {
+    color: #2177d1;
+  }
+
+  .ant-segmented-item {
+    transition: color 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}

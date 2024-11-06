@@ -1,0 +1,59 @@
+.slider-case {
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 12px;
+    background: #fff;
+    box-shadow: 0 1px 12px rgb(144 168 205 / 25%);
+    border-radius: 16px;
+
+    .reducBtn {
+        height: 24px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #fff;
+        color: #6c7480;
+        text-align: center;
+        cursor: pointer;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .cont-case {
+        width: 120px;
+
+        .ant-slider {
+            margin: 5px 0px;
+
+            .ant-slider-track {
+                background-color: #6c7480;
+            }
+
+            .ant-slider-handle {
+                border-color: #6c7480;
+                background-color: #6c7480;
+
+                &:focus {
+                    box-shadow: 0 0 0 5px rgba($color: #6c7480, $alpha: 12%);
+                }
+            }
+        }
+    }
+
+    .slider-dec-btn,
+    .slider-add-btn {
+        color: #6c7480;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 0 8px;
+        text-align: center;
+        cursor: pointer;
+    }
+}

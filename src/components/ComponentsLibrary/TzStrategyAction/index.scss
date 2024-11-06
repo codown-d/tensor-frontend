@@ -1,0 +1,39 @@
+.strategy-action {
+  padding: 4px;
+  border-radius: 8px;
+  background: #f4f6fa;
+  float: left;
+
+  span {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 6px;
+    color: #6c7480;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .act {
+    color: #fff;
+    border-radius: 6px;
+  }
+}
+
+.orange.act {
+  background: #ffc423;
+}
+
+.blue.act {
+  background: #2177d1;
+}
+
+.red.act {
+  background: #e95454;
+}
+
+.green.act {
+  background: rgb(82 196 26 / 100%);
+}

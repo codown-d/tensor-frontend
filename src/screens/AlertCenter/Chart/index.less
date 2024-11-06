@@ -1,0 +1,45 @@
+.echart-tooltip {
+  display: none;
+  min-width: 156px;
+  background: #ffffff;
+  box-shadow: 0px 1px 12px 0px rgba(144, 168, 205, 0.25);
+  border-radius: 8px 8px 8px 8px !important;
+  padding: 12px 16px !important;
+  border: 0px !important;
+    font-size: 12px !important;
+  .echart-tooltip-title {
+    color: #3e4653;
+    font-weight: 550;
+    font-size: 12px;
+  }
+  .echart-tooltip-item {
+    margin-top: 6px;
+    color: #6c7480;
+    display: flex;
+    align-items: center;
+    .marker {
+      span {
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 8px !important;
+        margin-right: 0 !important;
+      }
+    }
+    .seriesName {
+      margin-left: 6px;
+      flex: 1;
+    }
+  }
+  .echart-tooltip-item,.echart-tooltip-total{
+      .num{
+        color:#3E4653;
+        padding-left: 6px;
+      }
+  }
+  .echart-tooltip-total {
+    margin-top: 6px;
+    span{
+      float: right;
+    }
+  }
+}

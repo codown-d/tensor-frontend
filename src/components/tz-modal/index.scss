@@ -1,0 +1,87 @@
+.tz-modal {
+  .ant-modal-header {
+    padding: 24px 32px 20px;
+
+    .ant-modal-title {
+      font-weight: 600;
+      color: #1e222a;
+    }
+  }
+
+  .ant-modal-body {
+    padding-top: 0;
+  }
+
+  .ant-modal-footer {
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+      margin-left: 16px;
+    }
+  }
+}
+
+.tz-confirm-modal {
+  .ant-modal-body {
+    padding-bottom: 28px;
+  }
+
+  .ant-modal-confirm-body {
+    .ant-modal-confirm-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .ant-modal-confirm-content {
+      margin-top: 20px; //24-20px 20230315
+    }
+  }
+
+  .ant-modal-confirm-btns .ant-btn + .ant-btn {
+    margin-left: 16px;
+  }
+
+  .ant-modal-confirm-btns {
+    margin-top: 24px; //2023/1/16 TEN-678
+    padding-top: 4px;
+  }
+
+  .ant-modal-close {
+    right: 15px;
+    top: 15px;
+
+    .ant-modal-close-x {
+      width: auto;
+      height: auto;
+
+      .icon {
+        float: left;
+      }
+    }
+  }
+
+  &.footer-mt20 {
+    .ant-modal-confirm-btns {
+      margin-top: 16px;
+    }
+  }
+}
+
+.footer_null {
+  .ant-modal-confirm-btns {
+    display: none;
+  }
+}
+
+.ant-modal-wrap {
+  overflow-x: hidden;
+}
+
+.modal-t-r {
+  text-align: right;
+
+  .tz-confirm-modal {
+    margin-right: 420px;
+  }
+}

@@ -1,0 +1,22 @@
+.tz-input-search {
+  border-radius: 8px;
+  min-width: 280px;
+
+  .ant-input-affix-wrapper {
+    border-color: #f4f6fa;
+    background-color: transparent;
+
+    .ant-input {
+      background-color: transparent;
+    }
+  }
+
+  .ant-input {
+    height: 34px;
+  }
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  box-shadow: none;
+}

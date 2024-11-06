@@ -1,0 +1,153 @@
+.detail-drawer-group {
+  .detail-head-group {
+    position: relative;
+    display: flex;
+
+    // align-items: center;
+    .head-txt {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1e222a;
+      margin-right: 12px;
+      white-space: break-spaces;
+      word-break: break-all;
+      cursor: pointer;
+
+      &:hover {
+        color: #2177d1;
+      }
+    }
+
+    .detail-tz-small-tag {
+      height: 24px;
+      line-height: 22px;
+      padding: 1px 8px;
+      border-radius: 4px;
+      margin-right: 0;
+    }
+
+    .control-icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      position: absolute;
+      right: 16px;
+      cursor: pointer;
+
+      i {
+        line-height: initial;
+      }
+
+      &:hover {
+        color: #2177d1;
+        background: rgb(33 119 209 / 5%);
+      }
+    }
+  }
+
+  .detail-content-group {
+    .content-card-list {
+      background: #fff;
+      border-radius: 8px;
+
+      .subtitle-txt {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #3e4653;
+      }
+
+      .control-more {
+        font-size: 12px;
+        line-height: 20px;
+        margin-right: -8px;
+      }
+
+      .images-info-group {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.interact:hover {
+          box-shadow: 0 1px 12px rgb(144 168 205 / 25%);
+
+          .name-txt-link {
+            color: #2177d1;
+          }
+        }
+
+        .btmCase {
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -13px;
+            left: 0;
+            width: 100%;
+            height: 0;
+            border-bottom: 1px solid #f4f6fa;
+          }
+        }
+      }
+
+      .name-txt-link {
+        font-size: 14px;
+        line-height: 22px;
+        color: #3e4653;
+      }
+
+      .score-group {
+        display: inline-flex;
+        align-items: flex-end;
+        font-weight: 500;
+        font-size: 12px;
+
+        .score-txt {
+          line-height: 22px;
+          font-size: 20px;
+        }
+      }
+
+      .tag-severity {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 3px 12px;
+        border-radius: 6px;
+
+        .icon-round {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 6px;
+        }
+      }
+
+      .quest-group {
+        font-size: 16px;
+        line-height: 24px;
+
+        // color: #6c7480;
+        color: #b3bac6;
+
+        &.sel-color {
+          color: #6c7480;
+        }
+
+        .color-val {
+          color: #3e4653;
+        }
+      }
+
+      .cVuln {
+        color: rgb(108 116 128 / 100%);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.tab_col_wrap_c2 {
+    position: relative;
+    max-height: 52px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px;
+
+    .tz-tag {
+        vertical-align: top;
+        margin: 0;
+    }
+
+    .residue_tip+.tz-tag {
+        margin-left: 100px;
+    }
+
+    .residue_tip_num:hover {
+        color: #2177d1;
+    }
+}

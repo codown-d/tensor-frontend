@@ -1,0 +1,65 @@
+@import '../component/index';
+
+.rule-custom-configuration {
+  .ant-table-cell {
+    font-weight: 400;
+  }
+
+  .update-time {
+    color: #6c7480;
+  }
+
+  .rule-name {
+    color: #3e4653;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .effect-tag {
+    // height: 22px;
+    // line-height: 22px;
+    // color: #6c7480;
+    // font-size: 12px;
+    // font-weight: 400;
+    max-width: 100%;
+
+    &.tz-tag {
+      color: #6c7480;
+      font-weight: 400;
+      margin-top: 6px;
+    }
+  }
+
+  .highlight {
+    background-color: #fff9c5;
+  }
+
+  .rule-custom-highlight-txt {
+    font-style: normal;
+  }
+}
+
+.rule-custom-delete-confirm {
+  .ant-btn-dangerous {
+    background-color: #e95454;
+    color: #fff;
+    border-color: #e95454;
+  }
+}
+
+.rule-custom-modal {
+  .tz-form {
+    margin-bottom: -24px;
+  }
+}
+
+.rule-custom-tooltip-overlay {
+  .highlight {
+    background-color: #fff9c5;
+    color: #000;
+  }
+
+  .rule-custom-highlight-txt {
+    font-style: normal;
+  }
+}

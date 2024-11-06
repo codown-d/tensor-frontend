@@ -1,0 +1,43 @@
+.images-overview {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .overview-chart,
+  .safe-chart {
+    height: 100%;
+  }
+
+  .overview-chart {
+    text-align: center;
+    position: relative;
+    padding-right: 24px;
+    margin-right: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 68%;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      border-right: 1px solid #f4f6fa;
+    }
+
+    .num {
+      font-size: 26px;
+      font-weight: 600;
+      color: #1e222a;
+      line-height: 34px;
+    }
+
+    .text {
+      font-size: 12px;
+      font-weight: 400;
+      color: #6c7480;
+      line-height: 20px;
+    }
+  }
+}

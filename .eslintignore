@@ -1,0 +1,18 @@
+# backup/
+# plugins/
+# scripts/
+# config/
+# node_modules/
+# build/
+
+plugins
+backup
+scripts
+config
+node_modules
+build
+package.json
+.prettierrc.js
+commitlint.config.js
+react-app-env.d.ts
+react-app-env.d.ts

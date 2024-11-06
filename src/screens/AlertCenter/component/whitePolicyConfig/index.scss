@@ -1,0 +1,35 @@
+.effect-object-popup {
+  .boxs-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .type-list {
+    margin-bottom: 0;
+  }
+}
+
+.scope-confirm {
+  .mb12 {
+    margin-bottom: 12px;
+  }
+
+  .mb0 {
+    margin-bottom: 0;
+  }
+
+  .txt-des {
+    line-height: 22px;
+    color: #3e4653;
+  }
+
+  .tags-case {
+    width: 100%;
+    margin-bottom: -8px;
+  }
+
+  .tz-tag {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+}

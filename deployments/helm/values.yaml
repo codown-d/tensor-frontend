@@ -1,0 +1,32 @@
+global:
+  prefixName: csec
+
+image:
+  registry: localhost:32000
+  repository: library
+  name: frontend
+  tag: latest
+  pullPolicy: Always
+  pullSecret: harbor-admin-secret
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 500Mi
+  requests:
+    cpu: 200m
+    memory: 500Mi
+
+nameOverride: "frontend"
+fullnameOverride: "frontend"
+
+expose:
+  #可选择"ingress"、"NodePort"
+  type: ingress 
+  #以下参数仅对Ingres生效
+  hosts: console.example.com
+  tls:
+    enable: true 
+    crt: "certfile/tls.crt"
+    key: "certfile/tls.key"
+

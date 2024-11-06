@@ -1,0 +1,17 @@
+.edit-user-wrap {
+  .ant-form-item-tooltip {
+    color: #b3bac6 !important;
+  }
+}
+
+.lang-en {
+  .edit-user-wrap {
+    .tz-radio-group .ant-radio-wrapper {
+      margin-right: 8px;
+    }
+
+    .tz-checkbox-group .ant-checkbox-group-item {
+      margin-right: 8px;
+    }
+  }
+}

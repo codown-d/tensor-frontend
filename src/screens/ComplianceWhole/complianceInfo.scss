@@ -1,0 +1,23 @@
+.art-template.compliance-info-table-td .flex-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.compliance-info {
+  &.is-page {
+    margin: 0 32px;
+
+    .dock_h_title {
+      &.title_text {
+        padding-left: 0;
+      }
+
+      &::before {
+        width: 0;
+      }
+    }
+
+    .tz-card {
+      margin-bottom: 20px;
+    }
+  }
+}

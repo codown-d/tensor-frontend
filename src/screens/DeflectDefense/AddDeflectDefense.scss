@@ -1,0 +1,33 @@
+.deflect-defense-add-group {
+  padding: 8px 32px 20px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .form-group {
+    padding: 16px 24px;
+  }
+}
+
+.pri-defense-cascade-popup.tz-cascader-popupClassName {
+  .tz-cascader-menus {
+    .tz-cascader-panel.tz-cascader-menu {
+      .tz-checkbox-group {
+        ul {
+          li.tz-panel-option-item.disabled {
+            padding: 0 4px;
+            min-height: 36px;
+
+            .tz-panel-menu-item-content {
+              .tz-tooltip.db {
+                min-height: 36px;
+                line-height: 36px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

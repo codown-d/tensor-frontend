@@ -1,0 +1,38 @@
+.tz-cascader {
+  input {
+    height: 36px;
+    border-radius: 8px;
+    line-height: 34px;
+  }
+}
+
+.ant-select-dropdown.un-select .ant-cascader-checkbox {
+  width: 0;
+  display: none;
+}
+
+.ant-select-multiple .ant-select-selection-item-remove {
+  height: 16px;
+  line-height: 16px;
+  color: #2177d1;
+  font-size: 14px;
+}
+
+.ant-checkbox-wrapper.ant-checkbox-wrapper-in-form-item input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+}
+
+.ant-table-cell .ant-checkbox-wrapper {
+  width: 16px;
+  height: 16px;
+
+  .ant-checkbox {
+    top: 0;
+  }
+}
+
+.ant-cascader-dropdown .ant-cascader-menu-item {
+  // max-width: 400px;
+  white-space: initial;
+}

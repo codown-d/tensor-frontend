@@ -1,0 +1,29 @@
+html {
+    --menu-bg: #fff;
+    --menu-item-bg: #222e4d;
+    --menu-item-bg-hover: #f3f5f8;
+    --menu-item-active-bg: #2177d1;
+    --menu-item-title-color: #60728f;
+    --menu-item-title-active-color: #fff;
+    --menu-item-icon-color: #60728f;
+    --menu-item-icon-active-color: #fff;
+  }
+  
+  .tensor .langauges-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .tensor .langauges-section button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    background: transparent;
+  }
+  .tensor .langauges-section button img {
+    width: 20px;
+    margin-right: 3px;
+  }

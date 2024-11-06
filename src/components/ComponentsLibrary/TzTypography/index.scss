@@ -1,0 +1,28 @@
+.table-filter {
+  .spread-span {
+    color: #8e97a3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+    &:hover {
+      color: #2177d1;
+    }
+  }
+
+  &.noTxt {
+    .ant-divider-inner-text {
+      padding: 0;
+    }
+  }
+}
+
+.ant-divider-horizontal.ant-divider-with-text {
+  min-height: 22px;
+  margin: 0;
+
+  &::before,
+  &::after {
+    border-top-color: #f4f6fa;
+  }
+}

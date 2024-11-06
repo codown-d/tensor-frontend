@@ -1,0 +1,93 @@
+.bling {
+  animation: alarm 1s ease-in infinite;
+  stroke-width: 3;
+}
+@keyframes alarm {
+  0% {
+    stroke: #ff9966;
+  }
+  50% {
+    stroke: #ff3333;
+  }
+  100% {
+    stroke: #ff9966;
+  }
+}
+.node-active {
+  outline: 6px solid rgba(33, 119, 209, 0.3);
+  border-radius: 50%;
+}
+.legend {
+    position: fixed;
+  .legend-item {
+    &.allow {
+      background: url('/images/allow-line.png') 100% 50% no-repeat;
+      background-size: auto 30%;
+    }
+    &.deny {
+      background: url('/images/deny-line.png') 100% 50% no-repeat;
+      background-size: auto 30%;
+    }
+    &.alert {
+      background: url('/images/alert-line.png') 100% 50% no-repeat;
+      background-size: auto 30%;
+    }
+  }
+}
+
+.visualize-chart{
+    flex: 1;
+}
+
+.toolbar {
+  position: absolute;
+  .iconfont {
+    cursor: pointer;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #e7e9ed;
+  }
+}
+.toolbar-vertical {
+  display: flex;
+  flex-direction: column;
+  .iconfont {
+    margin: 10px 0;
+  }
+}
+.toolbar-horizontal {
+  display: flex;
+  flex-direction: row;
+  .iconfont {
+    margin: 0 10px;
+  }
+}
+.flowing {
+  animation: moveline 3s linear infinite;
+  offset-distance: 0%;
+}
+@keyframes moveline {
+  0% {
+    opacity: 1;
+    offset-distance: 0%;
+  }
+  100% {
+    opacity: 1;
+    offset-distance: 100%;
+  }
+}
+@keyframes move {
+    from {
+        offset-distance: 0%;
+    }
+    to {
+        offset-distance: 100%;
+    }
+}
+
+.circle-move {
+    offset-path: path("M 50 150 Q 150 50, 250 150 T 350 150");
+    offset-distance: 0%;
+    animation: move 4s indefinite;
+}

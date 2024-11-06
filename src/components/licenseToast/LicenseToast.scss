@@ -1,0 +1,38 @@
+.license-toast-case {
+  position: sticky;
+  height: 34px;
+  line-height: 34px;
+  width: 100%;
+  top: 0;
+  background: #fff6dc;
+  padding-right: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .anticon-exclamation-circle {
+    width: 0;
+    visibility: hidden;
+  }
+
+  .ant-alert-content {
+    flex: initial;
+  }
+
+  span,
+  .ant-alert-message,
+  .iconfont {
+    color: #ffc424;
+  }
+
+  .icon-tishi {
+    margin-right: 4px;
+  }
+
+  .license-toast-txt {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+  }
+}

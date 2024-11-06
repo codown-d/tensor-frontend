@@ -1,0 +1,9 @@
+.navbar-sidebar-case {
+  .ant-tabs-nav-list .ant-tabs-tab-btn {
+    font-weight: 400;
+  }
+
+  .ant-tabs-tab + .ant-tabs-tab {
+    margin: 0 0 0 40px;
+  }
+}

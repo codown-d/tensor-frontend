@@ -1,0 +1,58 @@
+.top-action-case {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .left-tit-case {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 0;
+    flex: 1;
+
+    .tag {
+      padding: 0 12px;
+      height: 28px;
+      line-height: 28px;
+      font-weight: 400;
+      font-size: 14px;
+      white-space: nowrap;
+      border-radius: 6px;
+    }
+
+    .tz-tag {
+      // flex-basis: 64px;
+      // flex-shrink: 0;
+      // min-width: 64px;
+    }
+
+    .blockTag {
+      margin-right: 12px;
+      border-radius: 14px;
+      color: #fff;
+      background: #212e4e;
+    }
+
+    .nstext {
+      color: #1e222a;
+      margin-right: 12px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      white-space: nowrap;
+    }
+
+    .replicaTag {
+      margin-right: 12px;
+      color: #6a6c72;
+      background: #e8edf4;
+    }
+  }
+
+  .right-fun-case {
+    margin-left: 10px;
+
+    // overflow-x: scroll;
+  }
+}

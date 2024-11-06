@@ -1,0 +1,82 @@
+.tz-header {
+    background: #fff;
+    padding: 20px 32px 12px 24px;
+
+    &.has-breadcrumb {
+        padding-top: 12px;
+    }
+
+    .ant-page-header-heading-left,
+    .ant-page-header-heading-title {
+        flex: 1;
+    }
+
+    .ant-page-header-heading-left,
+    .ant-page-header-heading-extra {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: fit-content;
+    }
+
+    .ant-page-header-heading-extra {
+        display: flex;
+        align-items: center;
+    }
+
+    .ant-page-header-back {
+        margin-right: 0;
+    }
+
+    .ant-page-header-heading-title {
+        padding-left: 8px;
+        line-height: 28px;
+        color: #1e222a;
+        white-space: normal;
+        word-break: break-all;
+        padding-block: 4px;
+    }
+
+    .ant-breadcrumb {
+        padding-left: 8px;
+
+        & li:last-child {
+            color: #3e4653;
+            cursor: default;
+        }
+    }
+
+    .ant-page-header-footer {
+        margin-top: 12px;
+
+        .ant-tabs .ant-tabs-nav::before {
+            border-bottom: 1px solid #f0f0f0;
+            width: calc(100% + 64px);
+            margin-left: -32px;
+        }
+
+        .ant-tabs .ant-tabs-tab {
+            padding-top: 0;
+        }
+
+        .ant-tabs-nav-list {
+            margin-left: 8px;
+        }
+    }
+}
+
+.backicon {
+    transform: rotateZ(90deg);
+    color: #1e222a;
+    font-weight: 200;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        color: #2177d1;
+        background: rgb(33 119 209 / 5%);
+    }
+}
+
+.screen-risk-explorer-clusters-online-vulnerabilities-details .header-content {
+    // box-shadow: 0 1px 12px rgba(144, 168, 205, 0.25);
+}

@@ -1,0 +1,42 @@
+.tz-anchor-old {
+  overflow: hidden;
+
+  .ant-anchor-ink {
+    display: none;
+  }
+
+  .ant-anchor-link-title {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .ant-anchor-link {
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: #2177d1;
+    }
+  }
+
+  .ant-anchor-link-active {
+    position: relative;
+    background: rgb(33 119 209 / 5%);
+    font-weight: 550;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid #2177d1;
+    }
+  }
+}

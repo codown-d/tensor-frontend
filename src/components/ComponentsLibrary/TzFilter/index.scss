@@ -1,0 +1,318 @@
+.tz-filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #3e4653;
+
+    .select-before {
+        width: 90px;
+    }
+
+
+    .tz-input-fitler {
+        min-width: 320px;
+        max-width: 480px;
+        margin-right: 8px;
+
+        .ant-input-group-addon {
+            background: #f4f6fa;
+            border: none;
+            padding: 0;
+            border-right: 1px solid #fff;
+
+            .ant-select {
+                margin: 0;
+
+                &.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+                    border-color: #f4f6fa;
+                    box-shadow: none;
+                    padding: 0 12px;
+
+                    &:hover {
+                        border-color: #2177d1 !important;
+                    }
+                }
+            }
+        }
+
+        .ant-input {
+            background: #f4f6fa;
+            border-color: #f4f6fa;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+            box-shadow: none;
+        }
+
+        .ant-input-affix-wrapper {
+            // width: 267px;
+            padding: 0;
+            background: #f4f6fa;
+            border-color: #f4f6fa;
+
+            &.ant-input-affix-wrapper-focused,
+            &:hover {
+                border-color: #2177d1;
+            }
+        }
+
+        .ant-input-prefix {
+            margin-right: 8px;
+            margin-left: 12px;
+        }
+
+        &.tz-selection {
+            display: initial;
+        }
+
+        .ant-select-single.ant-select-open .ant-select-selection-item {
+            color: #3e4653;
+        }
+
+        .ant-input-group-addon {
+
+            .ant-select-focused .ant-select-selector,
+            .ant-select.ant-select-open.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+                border-color: #2177d1 !important;
+                color: #3e4653;
+            }
+        }
+    }
+}
+
+.tz-filter-clear {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e7e9ed;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .tz-filter-icon {
+        fill: #6c7480;
+    }
+
+    &.tz-filter-button-active,
+    &:hover {
+        background-color: rgb(33 119 209 / 5%);
+
+        .tz-filter-icon {
+            fill: #2177d1;
+        }
+    }
+}
+
+.tz-filter-popover {
+    .tz-filter-button {
+        @extend .tz-filter-clear;
+    }
+}
+
+.tz-filter-overlay {
+    padding-top: 0;
+
+    &.tz-filter-overlay-item-panel-list-overflow {
+        top: 20px !important;
+    }
+
+    .ant-popover-arrow {
+        display: none;
+    }
+
+    .ant-popover-inner {
+        padding: 0;
+        background: #fff;
+    }
+
+    .ant-popover-title {
+        padding: 4px 18px 0;
+        line-height: 36px;
+        border-bottom-color: #f4f6fa;
+        color: #b3bac6;
+        font-weight: 400;
+    }
+
+    .tz-filter-overlay-search {
+        width: 100%;
+        height: fit-content;
+
+        &>input {
+            padding: 0;
+            border: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .ant-popover-inner-content {
+        padding: 0;
+        color: #3e4653;
+        min-width: 100px;
+    }
+
+    .tz-filter-list-ul {
+        overflow-y: scroll;
+    }
+
+    .tz-filter-list-li {
+        padding: 7px 16px;
+        line-height: 22px;
+        cursor: pointer;
+        color: #3e4653;
+
+        &:hover {
+            background: rgb(33 119 209 / 5%);
+            color: #2177d1;
+            font-weight: 400;
+        }
+    }
+
+    .tz-filter-list-icon {
+        margin-right: 8px;
+        font-size: 16px;
+        vertical-align: middle;
+        margin-bottom: 3px;
+    }
+
+    &.tz-filter-overlay-item-panel {
+        padding: 0;
+
+        .ant-select-selection-item-content {
+            flex: auto;
+            max-width: 220px;
+            overflow: hidden !important;
+            white-space: nowrap !important;
+            text-overflow: ellipsis !important;
+        }
+
+        .ant-select-selection-overflow-item {
+            display: none;
+        }
+    }
+
+    .tz-filter-overlay-title {
+        display: flex;
+
+        >span {
+            width: 50%;
+        }
+    }
+}
+
+.tz-filter-overlay-popcontent {
+    min-width: 200px;
+
+    >ul {
+        padding: 8px 0;
+    }
+
+    .tz-select {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    >span {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        &.tz-date-picker {
+            height: auto;
+        }
+    }
+
+    >div:not(.ant-picker) {
+        position: relative !important;
+    }
+
+    .ant-select-dropdown {
+        position: relative !important;
+        width: 100%;
+        padding: 0;
+        top: 0 !important;
+        left: 0 !important;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 1px 12px 0 rgb(144 168 205 / 25%);
+    }
+
+    .ant-picker-dropdown {
+        top: 0 !important;
+        position: relative !important;
+    }
+
+    .ant-picker-panel-container {
+        border-radius: 0;
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    .ant-picker {
+        display: flex;
+        margin: 0;
+        padding: 0 16px;
+
+        .ant-picker-suffix {
+            display: none;
+        }
+    }
+
+    .ant-picker-range-separator {
+        display: none;
+    }
+
+    &.tz-filter-overlay-popcontent-rangePickerCt {
+        margin-top: 0;
+
+        .tz-selection.tz-filter-picker-ct {
+            padding-top: 4px;
+            border-bottom: 1px solid #f4f6fa;
+        }
+
+        .tz-filter-picker-panel {
+            padding: 0;
+        }
+    }
+}
+
+.tz-filter-overlay-popcontent {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 10px;
+
+    .tz-tooltip {
+        visibility: hidden;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+}
+
+.tz-filter-overlay-popcontent-rangePicker {
+    display: flex;
+    flex-flow: column-reverse;
+
+    .tz-date-picker {
+        margin-bottom: 2px;
+    }
+
+    .tz-date-picker {
+        margin-top: 4px;
+        border-bottom: 1px solid #f4f6fa;
+    }
+}
+
+.tz-input-fitler-select-dropdown {
+    padding: 0;
+}

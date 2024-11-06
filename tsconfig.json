@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@cmp/*": ["src/components/*"],
+      "@pages/*": ["src/screens/*"],
+      "@api": ["src/services/DataService.ts"],
+    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "strictNullChecks": true,
+  },
+  "include": ["src", "src/definitions.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+}

@@ -1,0 +1,160 @@
+.ant-form {
+    >.ant-row:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.ant-form-item-label {
+    position: relative;
+    overflow: initial;
+
+    &>label {
+        color: #6c7480;
+
+        .ant-form-item-tooltip {
+            margin-inline-start: 0;
+            color: #b3bac6;
+
+            &:hover {
+                color: #2177d1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+        position: absolute;
+        left: -14px;
+        height: 12px;
+    }
+}
+
+.ant-form-item-control {
+    .ant-form-item-control-input {
+        min-height: initial;
+    }
+
+    .ant-form-item-extra {
+        font-size: 12px;
+        line-height: 20px;
+        color: #b3bac6;
+        margin-top: 2px;
+    }
+}
+
+.ant-form-item-explain {
+    font-size: 12px;
+}
+
+.ant-form-vertical .ant-form-item-label {
+    padding-bottom: 4px;
+}
+
+//drawer,modal样式
+.ant-drawer,
+.ant-modal {
+    .ant-form-item:not(.tz-filter-form-item) {
+        margin-bottom: 24px;
+    }
+}
+
+.form-item-block .ant-form-item-label>label {
+    display: inline-block;
+    width: 100%;
+}
+
+.my-form-item-children {
+    height: 34px;
+    border-radius: 8px;
+    border: 1px solid #e7e9ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &>.tz-input-number {
+        flex: 1;
+    }
+
+    &:hover {
+        border-color: #2177d1;
+    }
+}
+
+.form-item-label-tip {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8e97a3;
+}
+
+.form-item-divider {
+    border-top: 1px dashed rgb(244 246 250 / 100%);
+    padding-bottom: 12px;
+}
+
+.form-item-tips {
+    font-size: 12px;
+    font-weight: 400;
+    color: #b3bac6;
+    line-height: 20px;
+
+    &-error {
+        color: #e95454;
+    }
+}
+
+.form-global-check {
+
+    .ant-form-item-explain,
+    .ant-form-item-explain-error {
+        display: none;
+    }
+
+    .edit-table {
+
+        .ant-form-item-explain,
+        .ant-form-item-explain-error {
+            display: block;
+        }
+    }
+}
+
+.sub-tit {
+    color: #3e4653;
+}
+
+.form-item-label-w100 {
+    .ant-form-item-label>label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+
+    }
+}
+
+//form-unlabel 无label样式
+.form-unlabel {
+    .ant-form-item-label {
+        width: 0px;
+
+    }
+}
+
+//必填图标顶部对齐
+.form-label-icon {
+    .ant-form-item-required {
+        &::before {
+            top: 6px;
+        }
+    }
+}
+
+//MyFormItem 样式
+.score-input-select {
+    border: 1px solid #e7e9ed;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
